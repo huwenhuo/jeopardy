@@ -37,6 +37,13 @@ CATEGORY_MARGIN_Y = 80
 BOTTOM_MARGIN_Y = 120
 BUTTON_HEIGHT = 60
 
+# ---------- Load sounds ----------
+try:
+    sound_correct = pygame.mixer.Sound("correct.wav")
+    sound_wrong = pygame.mixer.Sound("wrong.wav")
+except:
+    sound_correct = sound_wrong = None
+
 # --- Load dataset ---
 if len(sys.argv) < 2:
     print("Usage: python program.py database_file.tsv")
@@ -164,7 +171,7 @@ def show_question(clue, category):
         # --- Display question below category ---
         lines = wrap_text(clue['question'], font_clue, SCREEN_WIDTH*0.6)
         for i, line in enumerate(lines):
-            screen.blit(font_clue.render(line, True, WHITE), (20, 60 + i * line_spacing))
+            screen.blit(font_clue.render(line, True, WHITE), (20, 90 + i * line_spacing))
 
         # --- Buttons ---
         if not show_answer:
@@ -209,7 +216,12 @@ def handle_answer(correct, points):
     global current_team
     if correct:
         team_scores[current_team] += points
+        sound_correct.play()
+    else:
+        sound_wrong.play()
+
     current_team = 1 - current_team  # switch turn
+  
 
 # --- Main loop ---
 running = True
