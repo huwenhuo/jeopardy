@@ -1,0 +1,31 @@
+subtype	question	option1	option2	option3	option4	correct	time	square_text
+Riddles	I'm tall when I'm young and short when I'm old. What am I?	Pencil	Candle	Tree	Shadow	2	20	100
+Riddles	What has keys but cannot open locks?	Map	Piano	Computer	Book	2	20	200
+Riddles	I speak without a mouth and hear without ears. What am I?	Echo	Robot	Shadow	Wind	1	25	300
+Riddles	The more you take, the more you leave behind. What am I?	Footsteps	Time	Breath	Shadow	1	25	400
+Riddles	What can travel around the world while staying in a corner?	Stamp	Airplane	Letter	Clock	1	25	500
+Riddles	What has hands but cannot clap?	Clock	Monkey	Robot	Statue	1	30	600
+Logic & Puzzles	Which is the odd one out: 2, 3, 5, 7, 9?	2	5	7	9	4	20	100
+Logic & Puzzles	If all Bloops are Razzies and all Razzies are Lazzies, are all Bloops Lazzies?	Yes	No	Sometimes	Cannot tell	1	20	200
+Logic & Puzzles	A farmer has 17 sheep, and all but 9 die. How many are left alive?	8	9	17	0	2	25	300
+Logic & Puzzles	There are three boxes: one contains apples, one oranges, one both. All labels are wrong. How to correctly label by picking one fruit?	Pick from box labeled both	Pick from box labeled apples	Pick from box labeled oranges	Pick any	1	25	400
+Logic & Puzzles	If you flip a coin three times, what’s the chance of getting all heads?	1/2	1/4	1/6	1/8	4	25	500
+Logic & Puzzles	Which number comes next: 2, 6, 12, 20, 30, ?	40	42	36	50	1	30	600
+Math & Numbers	What is 15 × 6?	90	80	95	85	1	20	100
+Math & Numbers	If you divide 120 by half and add 10, what is the result?	130	240	250	220	3	20	200
+Math & Numbers	What is the next prime number after 31?	33	37	39	41	2	25	300
+Math & Numbers	The sum of angles in a triangle is?	90°	180°	360°	270°	2	25	400
+Math & Numbers	A rectangle has length 8 and width 3. Area?	11	24	22	32	2	25	500
+Math & Numbers	If x + 3 = 10, what is 2x?	10	12	14	16	4	30	600
+Word Play	What word becomes shorter when you add 2 letters?	Small	Short	Tiny	Shorter	4	20	100
+Word Play	Which is a synonym for “happy”?	Sad	Joyful	Angry	Tired	2	20	200
+Word Play	Unscramble: “LEPAP”	APPLE	PEAR	GRAPE	PLANE	1	25	300
+Word Play	What word has a silent “k” at the start?	Know	Knot	Knee	All	4	25	400
+Word Play	Which word rhymes with “light”?	Night	Kite	Bite	All	4	25	500
+Word Play	Find the odd one: dog, cat, fish, chair	Dog	Cat	Fish	Chair	4	30	600
+Trivia & Curiosities	Which planet is closest to the sun?	Earth	Mercury	Venus	Mars	2	20	100
+Trivia & Curiosities	How many continents are there?	5	6	7	8	3	20	200
+Trivia & Curiosities	Which animal is known as the “King of the Jungle”?	Lion	Tiger	Elephant	Bear	1	25	300
+Trivia & Curiosities	Water freezes at?	0°C	32°C	100°C	-1°C	1	25	400
+Trivia & Curiosities	Which gas do humans breathe in and out?	Oxygen	Nitrogen	Carbon Dioxide	Hydrogen	3	25	500
+Trivia & Curiosities	Which is the fastest land animal?	Cheetah	Lion	Horse	Elephant	1	30	600

@@ -1,0 +1,31 @@
+subtype	question	option1	option2	option3	option4	correct	time	square_text
+Blocks & Items	What block is needed to craft a Nether Portal?	Obsidian	End Stone	Netherrack	Sandstone	1	20	100
+Blocks & Items	Which block can be used to make concrete powder?	Gravel	Sand	Clay	Dirt	2	20	200
+Blocks & Items	What block allows you to respawn in the Nether?	Respawn Anchor	Bed	Netherite Block	Soul Campfire	1	25	300
+Blocks & Items	Which ore drops Lapis Lazuli?	Blue Stone	Lapis Ore	Diamond Ore	Redstone Ore	2	25	400
+Blocks & Items	What is the rarest naturally occurring block in the Overworld?	Emerald Ore	Diamond Ore	Gold Ore	Netherite Ore	1	25	500
+Blocks & Items	Which block can grow mushrooms in any light level?	Podzol	Dirt	Mycelium	Grass	3	30	600
+Mobs	Which mob explodes when close to the player?	Creeper	Zombie	Skeleton	Spider	1	20	100
+Mobs	What mob drops an Ender Pearl when killed?	Enderman	Blaze	Slime	Wither Skeleton	1	20	200
+Mobs	Which hostile mob only spawns in the Nether?	Piglin	Creeper	Witch	Spider	1	25	300
+Mobs	Which mob can teleport randomly when hit?	Zombie	Enderman	Skeleton	Pillager	2	25	400
+Mobs	Which boss mob is found in the End?	Wither	Ender Dragon	Elder Guardian	Ravager	2	25	500
+Mobs	Which mob drops a Totem of Undying?	Evoker	Vindicator	Pillager	Warden	1	30	600
+Redstone & Mechanics	What item can transmit a redstone signal?	Redstone Dust	Iron Ingot	Coal	Gold	1	20	100
+Redstone & Mechanics	Which component can create a timed redstone pulse?	Lever	Repeater	Button	Pressure Plate	2	20	200
+Redstone & Mechanics	What can be used to detect entities automatically?	Observer	Hopper	Tripwire Hook	Comparator	3	25	300
+Redstone & Mechanics	Which block can move other blocks when powered?	Piston	Sticky Piston	Observer	Dispenser	2	25	400
+Redstone & Mechanics	What component is used to measure time intervals in redstone circuits?	Lever	Comparator	Redstone Torch	Repeater	4	25	500
+Redstone & Mechanics	Which item allows remote activation of redstone?	Tripwire Hook	Lever	Redstone Torch	Observer	1	30	600
+Biomes & Dimensions	What biome is home to mooshrooms?	Desert	Mushroom Fields	Plains	Taiga	2	20	100
+Biomes & Dimensions	Which dimension is where Piglins live?	End	Overworld	Nether	Deep Dark	3	20	200
+Biomes & Dimensions	What biome generates giant mushrooms naturally?	Jungle	Mushroom Fields	Swamp	Savanna	2	25	300
+Biomes & Dimensions	Which biome is full of ice spikes?	Ice Plains	Snowy Tundra	Ice Spikes	Frozen River	3	25	400
+Biomes & Dimensions	Where can you find End Cities?	Nether	Overworld	End	Jungle	3	25	500
+Biomes & Dimensions	Which biome contains a Woodland Mansion?	Forest	Dark Forest	Jungle	Taiga	2	30	600
+Crafting & Enchantments	What is the maximum level of Efficiency enchantment?	IV	V	VI	VII	2	20	100
+Crafting & Enchantments	Which material is required to craft a Netherite Ingot?	Diamond	Iron	Ancient Debris	Gold	3	20	200
+Crafting & Enchantments	Which item is needed to create a Conduit?	Heart of the Sea	Nether Star	Prismarine	Sea Lantern	1	25	300
+Crafting & Enchantments	Which enchantment protects you from fire damage?	Protection	Fire Protection	Blast Protection	Feather Falling	2	25	400
+Crafting & Enchantments	What is the maximum level of Mending enchantment?	1	3	5	7	1	25	500
+Crafting & Enchantments	What item is needed to craft a Lodestone?	Nether Brick	Prismarine	Compass	Netherite Ingot	2	30	600

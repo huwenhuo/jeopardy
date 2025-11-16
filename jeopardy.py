@@ -5,7 +5,7 @@ import csv
 from collections import defaultdict
 
 if len(sys.argv) < 2:
-    print("Usage: python minecraft_jeopardy_csv.py <filename.csv>")
+    print("Usage: python jeopardy.py <filename.csv>")
     sys.exit(1)
 
 filename = sys.argv[1]
@@ -13,10 +13,10 @@ filename = sys.argv[1]
 pygame.init()
 
 # Screen settings
-xx = 1.3
+xx = 1.5
 WIDTH, HEIGHT = 1024*xx, 600*xx
 SCREEN = pygame.display.set_mode((WIDTH, HEIGHT))
-pygame.display.set_caption("Minecraft Jeopardy")
+pygame.display.set_caption("Jeopardy of Holidays!")
 
 # Colors
 WHITE = (255, 255, 255)
