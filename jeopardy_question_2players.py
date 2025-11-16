@@ -148,35 +148,46 @@ def wrap_text(text, font, max_width):
         lines.append(current)
     return lines
 
-def show_question(clue):
+def show_question(clue, category):
     running = True
     show_answer = False
     correct_rect = wrong_rect = answer_rect = None
+    line_spacing = 80  # space between question lines
+
     while running:
         screen.fill(BLACK)
-        # Display question
-        lines = wrap_text(clue['question'], font_clue, SCREEN_WIDTH*0.6)
-        line_spacing = 80  # increase from 30 to 40 for more space
-        for i, line in enumerate(lines):
-            screen.blit(font_clue.render(line, True, WHITE), (20, 50 + i * line_spacing))
 
+        # --- Display category at the top ---
+        cat_surf = font_category.render(f"Category: {category}", True, ORANGE)
+        screen.blit(cat_surf, (20, 20))  # top-left, orange
+
+        # --- Display question below category ---
+        lines = wrap_text(clue['question'], font_clue, SCREEN_WIDTH*0.6)
+        for i, line in enumerate(lines):
+            screen.blit(font_clue.render(line, True, WHITE), (20, 60 + i * line_spacing))
+
+        # --- Buttons ---
         if not show_answer:
             answer_rect = pygame.Rect(SCREEN_WIDTH/2-100, SCREEN_HEIGHT-150, 200, 60)
             pygame.draw.rect(screen, GREEN, answer_rect)
             screen.blit(font_category.render("Show Answer", True, WHITE), (answer_rect.x+20, answer_rect.y+15))
         else:
-            # Display answer and buttons
+            # Display answer
             lines_ans = wrap_text(clue['answer'], font_clue, SCREEN_WIDTH-40)
             for i, line in enumerate(lines_ans):
-                screen.blit(font_clue.render(line, True, YELLOW), (20, 200+i*30))
+                screen.blit(font_clue.render(line, True, YELLOW), (20, 400 + i*30))
+
+            # Correct / Wrong buttons
             correct_rect = pygame.Rect(SCREEN_WIDTH/2-220, SCREEN_HEIGHT-150, 200, 60)
             wrong_rect = pygame.Rect(SCREEN_WIDTH/2+20, SCREEN_HEIGHT-150, 200, 60)
             pygame.draw.rect(screen, GREEN, correct_rect)
             pygame.draw.rect(screen, RED, wrong_rect)
             screen.blit(font_category.render("Correct", True, WHITE), (correct_rect.x+50, correct_rect.y+15))
             screen.blit(font_category.render("Wrong", True, WHITE), (wrong_rect.x+60, wrong_rect.y+15))
+
         pygame.display.flip()
 
+        # --- Event handling ---
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 pygame.quit()
@@ -211,14 +222,18 @@ while running:
         elif event.type == pygame.MOUSEBUTTONDOWN:
             mx, my = pygame.mouse.get_pos()
             # Round navigation
-            if prev_rect.collidepoint(mx,my):
-                current_round_index = max(0, current_round_index-1)
-            elif next_rect.collidepoint(mx,my):
-                current_round_index = min(len(rounds_list)-1, current_round_index+1)
+            if prev_rect.collidepoint(mx, my):
+                current_round_index = max(0, current_round_index - 1)
+            elif next_rect.collidepoint(mx, my):
+                current_round_index = min(len(rounds_list) - 1, current_round_index + 1)
             # Clue buttons
             for b in buttons:
-                if b['rect'].collidepoint(mx,my):
-                    show_question(b['clue'])
+                if b['rect'].collidepoint(mx, my):
+                    # Find category for this clue
+                    for cat, clues in rounds_dict[rounds_list[current_round_index]].items():
+                        if b['clue'] in clues:
+                            show_question(b['clue'], cat)
+                            break
 
 pygame.quit()
 
