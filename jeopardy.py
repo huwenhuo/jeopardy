@@ -1,233 +1,330 @@
-import pygame
-import sys
-import csv
+#!/usr/bin/env python3
+"""
+jeopardy.py - Pygame Jeopardy (multiple-choice, two teams) with feedback sounds
 
+Input file columns (header):
+subtype, question, option1, option2, option3, option4, correct, time, square_text
+"""
+
+import csv, sys, pygame
 from collections import defaultdict
-
-if len(sys.argv) < 2:
-    print("Usage: python jeopardy.py <filename.csv>")
-    sys.exit(1)
-
-filename = sys.argv[1]
+from math import floor
 
 pygame.init()
+pygame.mixer.init()
 
-# Screen settings
-xx = 1.5
-WIDTH, HEIGHT = 1024*xx, 600*xx
-SCREEN = pygame.display.set_mode((WIDTH, HEIGHT))
-pygame.display.set_caption("Jeopardy of Holidays!")
+# ---------- Config ----------
+xx = 1.1
+SCREEN_WIDTH = int(1200 * xx)
+SCREEN_HEIGHT = int(800 * xx)
+FPS = 30
 
-# Colors
-WHITE = (255, 255, 255)
-BLACK = (0, 0, 0)
-GRAY = (100, 100, 100)
-RED = (200, 0, 0)
-GREEN = (0, 200, 0)
-BLUE = (0, 120, 215)
-YELLOW = (255, 255, 0)
+TOP_MARGIN = 100
+LEFT_MARGIN = 40
+RIGHT_MARGIN = 40
+BOTTOM_MARGIN = 120
 
-# Fonts
-#Noto_Sans_SC.zip
-#-rw-r--r--@  1 huw  staff   10560076 Sep 11 12:44 NotoSansSC-Regular.ttf
-FONT = pygame.font.Font("NotoSansSC-Regular.ttf", 28)
-#FONT = pygame.font.SysFont('arial', 20)
-BIG_FONT = pygame.font.Font('NotoSansSC-Regular.ttf', 28)
-BIG_SCORE_FONT = pygame.font.Font('NotoSansSC-Regular.ttf', 30)
+CATEGORY_HEIGHT = 80
+CATEGORY_PADDING = 12
+TILE_MARGIN = 12
+TILE_MIN_HEIGHT = 64
+TILE_MIN_WIDTH = 120
 
-# Teams
-teams = {"Team 1": 0, "Team 2": 0}
-current_team = "Team 1"
+FONT_NAME = "NotoSansSC-Regular.ttf"
+FONT_SMALL = 18
+FONT_MED = 24
+FONT_LARGE = 30
+TEAM_FONT_SIZE = 35
 
-# Feedback
+BG = (10, 10, 10)
+TILE_COLOR = (30, 110, 200)
+TILE_USED_COLOR = (80, 80, 80)
+CATEGORY_COLOR = (20, 90, 160)
+TEXT = (255, 255, 255)
+HIGHLIGHT = (255, 165, 0)
+CORRECT_COLOR = (30, 200, 80)
+WRONG_COLOR = (200, 40, 40)
+OVERLAY_BG = (250, 250, 250)
+OVERLAY_TEXT = (10, 10, 10)
+
+FEEDBACK_DURATION = 60  # frames (~2 sec at 30 FPS)
+
+# ---------- Initialize Pygame ----------
+screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
+pygame.display.set_caption("Jeopardy")
+clock = pygame.time.Clock()
+
+font_small = pygame.font.Font(FONT_NAME, FONT_SMALL)
+font_med = pygame.font.Font(FONT_NAME, FONT_MED)
+font_large = pygame.font.Font(FONT_NAME, FONT_LARGE)
+font_team = pygame.font.Font(FONT_NAME, TEAM_FONT_SIZE)
+
+# ---------- Load sounds ----------
+try:
+    sound_correct = pygame.mixer.Sound("correct.wav")
+    sound_wrong = pygame.mixer.Sound("wrong.wav")
+except:
+    sound_correct = sound_wrong = None
+
+# ---------- Helpers ----------
+def detect_delimiter(header_line):
+    return "\t" if "\t" in header_line else ","
+
+def wrap_text(text, font, max_width):
+    words = text.split()
+    if not words:
+        return [""]
+    lines = []
+    cur = words[0]
+    for w in words[1:]:
+        test = cur + " " + w
+        if font.size(test)[0] <= max_width:
+            cur = test
+        else:
+            lines.append(cur)
+            cur = w
+    lines.append(cur)
+    return lines
+
+def parse_correct_field(correct_field):
+    if not correct_field:
+        return None
+    c = correct_field.strip()
+    if len(c) == 1 and c in "1234":
+        return int(c)-1
+    if len(c) == 1 and c.upper() in "ABCD":
+        return ord(c.upper()) - ord("A")
+    return c
+
+# ---------- Load questions ----------
+if len(sys.argv)<2:
+    print("Usage: python jeopardy.py questions.tsv")
+    sys.exit(1)
+input_file = sys.argv[1]
+
+with open(input_file,"r",encoding="utf-8",newline="") as fh:
+    header_line = fh.readline()
+    delimiter = detect_delimiter(header_line)
+
+questions_raw = []
+with open(input_file,"r",encoding="utf-8",newline="") as fh:
+    reader = csv.DictReader(fh, delimiter=delimiter)
+    for row in reader:
+        row_lc = {k.strip(): v for k,v in row.items()}
+        subtype = row_lc.get("subtype") or row_lc.get("category") or ""
+        qtext = row_lc.get("question") or ""
+        options = [row_lc.get(f"option{i}", "") for i in range(1,5)]
+        correct_raw = row_lc.get("correct") or ""
+        time_allowed = int(row_lc.get("time") or 20)
+        square_text = row_lc.get("square_text") or "100"
+        try:
+            points = int(square_text)
+        except:
+            import re
+            m = re.search(r"\d+", str(square_text))
+            points = int(m.group()) if m else 100
+        questions_raw.append({
+            "subtype": subtype.strip(),
+            "question": qtext.strip(),
+            "options": [o.strip() for o in options],
+            "correct_raw": correct_raw.strip(),
+            "correct": parse_correct_field(correct_raw.strip()),
+            "time": time_allowed,
+            "square_text": str(square_text).strip(),
+            "points": points,
+            "used": False
+        })
+
+if not questions_raw:
+    print("No questions loaded.")
+    sys.exit(1)
+
+categories = defaultdict(list)
+for q in questions_raw:
+    categories[q["subtype"] or "Misc"].append(q)
+
+category_names = sorted(categories.keys())
+for cat in category_names:
+    categories[cat].sort(key=lambda x:x["points"])
+
+# ---------- Game State ----------
+team_names = ["Team A","Team B"]
+team_scores = [0,0]
+current_team_idx = 0
+showing_overlay = False
+overlay_question = None
+overlay_metadata = {}
+
+feedback_showing = False
 feedback_text = ""
+feedback_color = (0,0,0)
 feedback_timer = 0
 
-# Load questions from CSV
-questions = []
-delimiter_char = '\t'  # or '\t' for TSV
+num_cols = len(category_names)
+max_rows = max(len(categories[c]) for c in category_names)
 
-try:
-    with open(filename, newline='', encoding='utf-8') as file:
-        reader = csv.reader(file, delimiter=delimiter_char)
-        next(reader)  # skip header
-        for row in reader:
-            if len(row) < 9:
-                continue
-            try:
-                subtype = row[0].strip()
-                question = row[1].strip()
-                a1 = row[2].strip()
-                a2 = row[3].strip()
-                a3 = row[4].strip()
-                a4 = row[5].strip()
-                correct = int(row[6].strip())
-                time_sec = int(row[7].strip())
-                square_text = row[8].strip()
-                questions.append([subtype, question, a1, a2, a3, a4, correct, time_sec, square_text])
-            except ValueError:
-                print(f"Skipping invalid row: {row}")
-except FileNotFoundError:
-    print(f"Error: file '{filename}' not found.")
-    sys.exit()
+def compute_grid():
+    avail_w = SCREEN_WIDTH - LEFT_MARGIN - RIGHT_MARGIN
+    col_w = max((avail_w - (num_cols-1)*TILE_MARGIN)/num_cols, TILE_MIN_WIDTH)
+    avail_h = SCREEN_HEIGHT - TOP_MARGIN - BOTTOM_MARGIN - CATEGORY_HEIGHT - CATEGORY_PADDING
+    tile_h = max(floor((avail_h - (max_rows-1)*TILE_MARGIN)/max_rows), TILE_MIN_HEIGHT)
+    return col_w, tile_h
 
-print(f"Loaded {len(questions)} questions from {filename}")
-
-# Detect subtypes and organize questions
-subtype_questions = defaultdict(list)
-for q in questions:
-    subtype_questions[q[0]].append(q)
-
-# Sort questions in each subtype by square_text
-for s in subtype_questions:
-    subtype_questions[s].sort(key=lambda x: int(x[8]))
-
-subtypes = list(subtype_questions.keys())
-COLS = len(subtypes)
-ROWS = max(len(subtype_questions[s]) for s in subtypes)
-
-SCORE_ROW_HEIGHT = 100
-square_width = WIDTH // COLS
-square_height = (HEIGHT - SCORE_ROW_HEIGHT) // ROWS
-
-# Build board squares and mapping
-board_squares = []
-square_mapping = []
-square_texts = []
-
-for col_index, s in enumerate(subtypes):
-    for row_index, q in enumerate(subtype_questions[s]):
-        rect = pygame.Rect(col_index*square_width,
-                           SCORE_ROW_HEIGHT + row_index*square_height,
-                           square_width, square_height)
-        board_squares.append(rect)
-        square_mapping.append(q)
-        square_texts.append(q[8])  # show points from CSV
-
-used_squares = [False]*len(board_squares)
-
-# Draw the board
 def draw_board():
-    SCREEN.fill(BLACK)
-    # Score row
-    pygame.draw.rect(SCREEN, GRAY, (0,0, WIDTH, SCORE_ROW_HEIGHT))
-    score_display = BIG_SCORE_FONT.render(
-        f"Team 1: {teams['Team 1']} | Team 2: {teams['Team 2']} | Current: {current_team}", True, WHITE)
-    SCREEN.blit(score_display, (10, 10))
-    
-    # Feedback
-    if feedback_text:
-        feedback_render = BIG_SCORE_FONT.render(feedback_text, True, GREEN if feedback_text=="Correct!" else RED)
-        SCREEN.blit(feedback_render, (WIDTH//2 - feedback_render.get_width()//2, 10))
-    
-    # Column headers
-    for col_index, s in enumerate(subtypes):
-        text = BIG_FONT.render(s, True, WHITE)
-        SCREEN.blit(text, (col_index*square_width + square_width//2 - text.get_width()//2,
-                           SCORE_ROW_HEIGHT - 40))
-    
-    # Draw squares
-    for i, rect in enumerate(board_squares):
-        color = BLUE if not used_squares[i] else GRAY
-        pygame.draw.rect(SCREEN, color, rect)
-        pygame.draw.rect(SCREEN, WHITE, rect, 3)
-        text_to_show = square_texts[i] if i < len(square_texts) else ""
-        text = BIG_FONT.render(text_to_show, True, WHITE)
-        SCREEN.blit(text, (rect.x + rect.width // 2 - text.get_width()//2,
-                           rect.y + rect.height // 2 - text.get_height()//2))
+    screen.fill(BG)
+    # --- team scores ---
+    surf1 = font_team.render(f"{team_names[0]}: {team_scores[0]}", True, TEXT)
+    surf2 = font_team.render(f"{team_names[1]}: {team_scores[1]}", True, TEXT)
+    screen.blit(surf1,(LEFT_MARGIN,10))
+    screen.blit(surf2,(SCREEN_WIDTH-RIGHT_MARGIN-surf2.get_width(),10))
+    if current_team_idx==0:
+        pygame.draw.rect(screen,HIGHLIGHT,(LEFT_MARGIN-8,6,surf1.get_width()+16,surf1.get_height()+8),3)
+    else:
+        pygame.draw.rect(screen,HIGHLIGHT,(SCREEN_WIDTH-RIGHT_MARGIN-surf2.get_width()-8,6,surf2.get_width()+16,surf2.get_height()+8),3)
+
+    tile_w, tile_h = compute_grid()
+    # --- categories ---
+    for col_idx, cat in enumerate(category_names):
+        col_x = LEFT_MARGIN + col_idx*(tile_w+TILE_MARGIN)
+        cat_rect = pygame.Rect(col_x, TOP_MARGIN, tile_w, CATEGORY_HEIGHT)
+        pygame.draw.rect(screen, CATEGORY_COLOR, cat_rect)
+        pygame.draw.rect(screen, (0,0,0), cat_rect,2)
+        cat_lines = wrap_text(cat, font_med, tile_w-20)
+        total_h = len(cat_lines)*font_med.get_height()
+        start_y = TOP_MARGIN + (CATEGORY_HEIGHT - total_h)//2
+        for i,line in enumerate(cat_lines):
+            ls = font_med.render(line, True, TEXT)
+            screen.blit(ls, (col_x + (tile_w-ls.get_width())//2, start_y + i*font_med.get_height()))
+    # --- question tiles ---
+    for col_idx, cat in enumerate(category_names):
+        col_x = LEFT_MARGIN + col_idx*(tile_w+TILE_MARGIN)
+        for row_idx, q in enumerate(categories[cat]):
+            tile_y = TOP_MARGIN + CATEGORY_HEIGHT + CATEGORY_PADDING + row_idx*(tile_h+TILE_MARGIN)
+            rect = pygame.Rect(col_x, tile_y, tile_w, tile_h)
+            color = TILE_USED_COLOR if q["used"] else TILE_COLOR
+            pygame.draw.rect(screen, color, rect, border_radius=6)
+            label = q["square_text"]
+            pts = font_large.render(label, True, TEXT)
+            screen.blit(pts,(col_x+tile_w/2-pts.get_width()/2, tile_y+tile_h/2-pts.get_height()/2))
+
+    help_s = font_small.render("Click a tile to open question.", True, TEXT)
+    screen.blit(help_s,(LEFT_MARGIN,SCREEN_HEIGHT-30))
+
+def get_tile_at(pos):
+    x,y = pos
+    tile_w, tile_h = compute_grid()
+    for col_idx, cat in enumerate(category_names):
+        col_x = LEFT_MARGIN + col_idx*(tile_w+TILE_MARGIN)
+        for row_idx, q in enumerate(categories[cat]):
+            tile_y = TOP_MARGIN + CATEGORY_HEIGHT + CATEGORY_PADDING + row_idx*(tile_h+TILE_MARGIN)
+            if pygame.Rect(col_x, tile_y, tile_w, tile_h).collidepoint(x,y):
+                return col_idx,row_idx
+    return None,None
+
+def open_overlay(col_idx, row_idx):
+    global showing_overlay, overlay_question, overlay_metadata
+    cat = category_names[col_idx]
+    q = categories[cat][row_idx]
+    if q["used"]:
+        return
+    showing_overlay = True
+    overlay_question = q
+    overlay_metadata = {"col":col_idx,"row":row_idx,"option_rects":[]}
+    correct = q["correct"]
+    if isinstance(correct,int):
+        overlay_metadata["correct_index"]=correct
+    else:
+        overlay_metadata["correct_index"]=None
+
+def draw_overlay():
+    pad = 20
+    overlay_w = SCREEN_WIDTH-200
+    overlay_h = SCREEN_HEIGHT-220
+    ox = (SCREEN_WIDTH-overlay_w)//2
+    oy = (SCREEN_HEIGHT-overlay_h)//2
+    pygame.draw.rect(screen, OVERLAY_BG,(ox,oy,overlay_w,overlay_h),border_radius=8)
+    pygame.draw.rect(screen, (180,180,180),(ox,oy,overlay_w,overlay_h),2,border_radius=8)
+    title = f"{overlay_question['subtype']} — {overlay_question['square_text']} pts"
+    screen.blit(font_med.render(title,True,OVERLAY_TEXT),(ox+pad,oy+pad))
+    q_lines = wrap_text(overlay_question["question"], font_med, overlay_w-2*pad)
+    for i,line in enumerate(q_lines):
+        screen.blit(font_med.render(line,True,OVERLAY_TEXT),(ox+pad,oy+pad+40+i*(font_med.get_height()+4)))
+    options_y = oy+pad+40+len(q_lines)*(font_med.get_height()+4)+20
+    opt_h = 56
+    opt_w = overlay_w-2*pad
+    option_rects=[]
+    for i,opt in enumerate(overlay_question["options"]):
+        r = pygame.Rect(ox+pad, options_y+i*(opt_h+12), opt_w, opt_h)
+        pygame.draw.rect(screen, TILE_COLOR,r,border_radius=6)
+        label = f"{chr(65+i)}. {opt}"
+        screen.blit(font_med.render(label,True,(255,255,255)),(r.x+12,r.y+(opt_h-font_med.get_height())//2))
+        option_rects.append(r)
+    overlay_metadata["option_rects"]=option_rects
+
+def handle_option_click(idx):
+    global showing_overlay, current_team_idx
+    global overlay_question, overlay_metadata
+    global feedback_showing, feedback_text, feedback_color, feedback_timer
+
+    q = overlay_question
+    correct = overlay_metadata.get("correct_index")
+    is_correct = (idx==correct)
+
+    if is_correct:
+        team_scores[current_team_idx]+=q["points"]
+        feedback_text="CORRECT! 🎉"
+        feedback_color=CORRECT_COLOR
+        if sound_correct:
+            sound_correct.play()
+    else:
+        feedback_text="WRONG ❌"
+        feedback_color=WRONG_COLOR
+        if sound_wrong:
+            sound_wrong.play()
+
+    q["used"]=True
+    categories[q["subtype"]][overlay_metadata["row"]]["used"]=True
+
+    current_team_idx=1-current_team_idx
+    showing_overlay=False
+    overlay_question=None
+    overlay_metadata.clear()
+    feedback_showing=True
+    feedback_timer=FEEDBACK_DURATION
+
+# ---------- Main loop ----------
+running=True
+while running:
+    clock.tick(FPS)
+    for e in pygame.event.get():
+        if e.type==pygame.QUIT:
+            running=False
+        elif e.type==pygame.MOUSEBUTTONDOWN and e.button==1:
+            mx,my=e.pos
+            if showing_overlay:
+                for i,r in enumerate(overlay_metadata.get("option_rects",[])):
+                    if r.collidepoint(mx,my):
+                        handle_option_click(i)
+                        break
+            else:
+                col,row=get_tile_at((mx,my))
+                if col is not None:
+                    open_overlay(col,row)
+
+    draw_board()
+    if showing_overlay:
+        draw_overlay()
+    if feedback_showing:
+        s = pygame.Surface((SCREEN_WIDTH,SCREEN_HEIGHT),pygame.SRCALPHA)
+        s.fill((0,0,0,180))
+        screen.blit(s,(0,0))
+        surf = font_large.render(feedback_text,True,feedback_color)
+        screen.blit(surf,((SCREEN_WIDTH-surf.get_width())//2,(SCREEN_HEIGHT-surf.get_height())//2))
+        feedback_timer-=1
+        if feedback_timer<=0:
+            feedback_showing=False
+
     pygame.display.flip()
 
-# Show question and handle answer
-def show_question(q):
-    global feedback_text, feedback_timer
-    _, question, a1, a2, a3, a4, correct, time_sec, _ = q
-    answers = [a1, a2, a3, a4]
-    start_ticks = pygame.time.get_ticks()
-    
-    while True:
-        SCREEN.fill(BLACK)
-        pygame.draw.rect(SCREEN, GRAY, (0,0, WIDTH, SCORE_ROW_HEIGHT))
-        score_display = BIG_SCORE_FONT.render(
-            f"Team 1: {teams['Team 1']} | Team 2: {teams['Team 2']} | Current: {current_team}", True, WHITE)
-        SCREEN.blit(score_display, (10, 10))
-        
-        seconds = time_sec - (pygame.time.get_ticks()-start_ticks)//1000
-        timer_text = BIG_SCORE_FONT.render(f"Time: {seconds}", True, RED)
-        SCREEN.blit(timer_text, (WIDTH-200, 10))
-        if seconds <=0:
-            return None
-        
-        # Wrap question text
-        words = question.split(' ')
-        lines=[]
-        line=""
-        for w in words:
-            if len(line + ' ' + w)<40:
-                line+=w+' '
-            else:
-                lines.append(line)
-                line=w+' '
-        lines.append(line)
-        for i,l in enumerate(lines):
-            text = BIG_FONT.render(l,True,YELLOW)
-            SCREEN.blit(text,(50,SCORE_ROW_HEIGHT + 10 + i*30))
-        
-        # Draw answer buttons
-        answer_rects = []
-        for i, ans in enumerate(answers):
-            rect = pygame.Rect(100, SCORE_ROW_HEIGHT + 100 + i*50, 800, 40)
-            answer_rects.append(rect)
-            pygame.draw.rect(SCREEN, WHITE, rect, 2)
-            text = BIG_FONT.render(f"{i+1}. {ans}", True, WHITE)
-            SCREEN.blit(text, (rect.x + 5, rect.y + 5))
-        pygame.display.flip()
-        
-        for event in pygame.event.get():
-            if event.type==pygame.QUIT:
-                pygame.quit()
-                sys.exit()
-            if event.type==pygame.MOUSEBUTTONDOWN:
-                mouse_pos = event.pos
-                for i, rect in enumerate(answer_rects):
-                    if rect.collidepoint(mouse_pos):
-                        chosen = i+1
-                        feedback_text = "Correct!" if chosen == correct else "Wrong!"
-                        feedback_timer = pygame.time.get_ticks() + 1500
-                        return chosen
-
-# Main loop
-def main():
-    global current_team, feedback_text
-    running = True
-    clock = pygame.time.Clock()
-    
-    while running:
-        draw_board()
-        for event in pygame.event.get():
-            if event.type==pygame.QUIT:
-                running=False
-            if event.type==pygame.MOUSEBUTTONDOWN:
-                pos = pygame.mouse.get_pos()
-                for i, rect in enumerate(board_squares):
-                    if rect.collidepoint(pos) and not used_squares[i]:
-                        used_squares[i]=True
-                        q = square_mapping[i]
-                        answer = show_question(q)
-                        if answer == q[6]:  # correct
-                            try:
-                                points = int(q[8])
-                            except ValueError:
-                                points = 0
-                            teams[current_team] += points
-                            square_texts[i] = "Correct!"
-                        else:
-                            square_texts[i] = "Wrong!"
-                            # Switch team
-                            current_team = "Team 2" if current_team=="Team 1" else "Team 1"
-        if feedback_text and pygame.time.get_ticks() > feedback_timer:
-            feedback_text = ""
-        clock.tick(30)
-
-main()
 pygame.quit()
 
