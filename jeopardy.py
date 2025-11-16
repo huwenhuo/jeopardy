@@ -1,6 +1,7 @@
 import pygame
 import sys
 import csv
+
 from collections import defaultdict
 
 if len(sys.argv) < 2:
@@ -27,9 +28,12 @@ BLUE = (0, 120, 215)
 YELLOW = (255, 255, 0)
 
 # Fonts
-FONT = pygame.font.SysFont('arial', 20)
-BIG_FONT = pygame.font.SysFont('arial', 28)
-BIG_SCORE_FONT = pygame.font.SysFont('arial', 30)
+#Noto_Sans_SC.zip
+#-rw-r--r--@  1 huw  staff   10560076 Sep 11 12:44 NotoSansSC-Regular.ttf
+FONT = pygame.font.Font("NotoSansSC-Regular.ttf", 28)
+#FONT = pygame.font.SysFont('arial', 20)
+BIG_FONT = pygame.font.Font('NotoSansSC-Regular.ttf', 28)
+BIG_SCORE_FONT = pygame.font.Font('NotoSansSC-Regular.ttf', 30)
 
 # Teams
 teams = {"Team 1": 0, "Team 2": 0}
