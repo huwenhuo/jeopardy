@@ -1,0 +1,31 @@
+subtype	question	option1	option2	option3	option4	correct	time	square_text
+Cell Biology	Which organelle is responsible for detoxifying chemicals in the cell?	Lysosome	Peroxisome	Ribosome	Golgi apparatus	2	20	100
+Cell Biology	Which cytoskeletal element helps with cell division?	Microtubules	Microfilaments	Intermediate filaments	Actin	1	20	200
+Cell Biology	Endocytosis moves substances into or out of the cell?	Into	Out	Both	Neither	1	25	300
+Cell Biology	Which organelle modifies and packages proteins?	Mitochondria	Golgi apparatus	ER	Nucleus	2	25	400
+Cell Biology	What is the semi-fluid portion of the cell called?	Cytoplasm	Cytosol	Nucleoplasm	Matrix	2	25	500
+Cell Biology	Which organelle is only found in plants and some protists?	Mitochondria	Chloroplast	Lysosome	Peroxisome	2	30	600
+Genetics	Which law states that alleles segregate independently?	Law of Segregation	Law of Independent Assortment	Law of Dominance	Law of Probability	2	20	100
+Genetics	What is the complementary DNA strand for 5’-ATCG-3’?	TAGC	UAGC	ATCG	CGAT	1	20	200
+Genetics	Crossing over occurs during which phase?	Prophase I	Metaphase II	Anaphase I	Telophase II	1	25	300
+Genetics	Which type of RNA is part of the ribosome?	tRNA	mRNA	rRNA	snRNA	3	25	400
+Genetics	What is a phenotype?	The DNA sequence	The observable trait	The RNA sequence	The mutation	2	25	500
+Genetics	Sickle cell disease is caused by what type of mutation?	Deletion	Point mutation	Frameshift	Duplication	2	30	600
+Evolution & Ecology	What type of selection favors extreme phenotypes?	Stabilizing	Directional	Disruptive	Sexual	3	20	100
+Evolution & Ecology	Which type of speciation occurs without geographic separation?	Allopatric	Sympatric	Peripatric	Parapatric	2	20	200
+Evolution & Ecology	In an ecosystem, which level represents producers?	Primary consumers	Autotrophs	Carnivores	Decomposers	2	25	300
+Evolution & Ecology	Mutualism benefits which organisms?	Both	One	Neither	Predator only	1	25	400
+Evolution & Ecology	Which process leads to convergent evolution?	Similar selection pressures	Random mutation	Genetic drift	Hybridization	1	25	500
+Evolution & Ecology	Keystone species have what effect on an ecosystem?	Minor effect	Major effect	No effect	Only affect predators	2	30	600
+Physiology	Which system regulates hormones?	Nervous	Endocrine	Circulatory	Immune	2	20	100
+Physiology	Which organ excretes urea?	Liver	Kidney	Pancreas	Spleen	2	20	200
+Physiology	Which type of neuron carries signals to muscles?	Sensory	Motor	Interneuron	Reflex	2	25	300
+Physiology	Which blood cells fight infections?	Red	White	Platelets	Plasma	2	25	400
+Physiology	The sinoatrial node is found in which organ?	Brain	Heart	Lungs	Kidney	2	25	500
+Physiology	Which hormone lowers blood glucose levels?	Glucagon	Insulin	Adrenaline	Cortisol	2	30	600
+Biochemistry	Which molecule stores energy long-term?	ATP	Glycogen	Lipids	Protein	3	20	100
+Biochemistry	Which reaction joins amino acids?	Hydrolysis	Dehydration synthesis	Oxidation	Reduction	2	20	200
+Biochemistry	Enzyme activity is affected by which factor?	pH	Temperature	Substrate concentration	All of the above	4	25	300
+Biochemistry	What is the main carbohydrate in plant cell walls?	Starch	Cellulose	Glycogen	Chitin	2	25	400
+Biochemistry	ATP is composed of adenine, ribose, and how many phosphates?	2	3	4	1	2	25	500
+Biochemistry	Which coenzyme carries electrons in cellular respiration?	NAD⁺	FAD	Both	ATP	3	30	600

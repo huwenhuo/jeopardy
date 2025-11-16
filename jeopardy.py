@@ -1,12 +1,9 @@
 #!/usr/bin/env python3
 """
-jeopardy.py - Pygame Jeopardy (multiple-choice, two teams) with feedback sounds
-
-Input file columns (header):
-subtype, question, option1, option2, option3, option4, correct, time, square_text
+jeopardy.py - Pygame Jeopardy with selectable question files and feedback sounds
 """
 
-import csv, sys, pygame
+import os, csv, sys, pygame
 from collections import defaultdict
 from math import floor
 
@@ -30,7 +27,8 @@ TILE_MARGIN = 12
 TILE_MIN_HEIGHT = 64
 TILE_MIN_WIDTH = 120
 
-FONT_NAME = "NotoSansSC-Regular.ttf"
+#FONT_NAME = "NotoSansSC-Regular.ttf"
+FONT_NAME = ""
 FONT_SMALL = 18
 FONT_MED = 24
 FONT_LARGE = 30
@@ -54,10 +52,10 @@ screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 pygame.display.set_caption("Jeopardy")
 clock = pygame.time.Clock()
 
-font_small = pygame.font.Font(FONT_NAME, FONT_SMALL)
-font_med = pygame.font.Font(FONT_NAME, FONT_MED)
-font_large = pygame.font.Font(FONT_NAME, FONT_LARGE)
-font_team = pygame.font.Font(FONT_NAME, TEAM_FONT_SIZE)
+font_small = pygame.font.SysFont(FONT_NAME, FONT_SMALL)
+font_med = pygame.font.SysFont(FONT_NAME, FONT_MED)
+font_large = pygame.font.SysFont(FONT_NAME, FONT_LARGE)
+font_team = pygame.font.SysFont(FONT_NAME, TEAM_FONT_SIZE)
 
 # ---------- Load sounds ----------
 try:
@@ -96,61 +94,11 @@ def parse_correct_field(correct_field):
         return ord(c.upper()) - ord("A")
     return c
 
-# ---------- Load questions ----------
-if len(sys.argv)<2:
-    print("Usage: python jeopardy.py questions.tsv")
-    sys.exit(1)
-input_file = sys.argv[1]
-
-with open(input_file,"r",encoding="utf-8",newline="") as fh:
-    header_line = fh.readline()
-    delimiter = detect_delimiter(header_line)
-
-questions_raw = []
-with open(input_file,"r",encoding="utf-8",newline="") as fh:
-    reader = csv.DictReader(fh, delimiter=delimiter)
-    for row in reader:
-        row_lc = {k.strip(): v for k,v in row.items()}
-        subtype = row_lc.get("subtype") or row_lc.get("category") or ""
-        qtext = row_lc.get("question") or ""
-        options = [row_lc.get(f"option{i}", "") for i in range(1,5)]
-        correct_raw = row_lc.get("correct") or ""
-        time_allowed = int(row_lc.get("time") or 20)
-        square_text = row_lc.get("square_text") or "100"
-        try:
-            points = int(square_text)
-        except:
-            import re
-            m = re.search(r"\d+", str(square_text))
-            points = int(m.group()) if m else 100
-        questions_raw.append({
-            "subtype": subtype.strip(),
-            "question": qtext.strip(),
-            "options": [o.strip() for o in options],
-            "correct_raw": correct_raw.strip(),
-            "correct": parse_correct_field(correct_raw.strip()),
-            "time": time_allowed,
-            "square_text": str(square_text).strip(),
-            "points": points,
-            "used": False
-        })
-
-if not questions_raw:
-    print("No questions loaded.")
-    sys.exit(1)
-
-categories = defaultdict(list)
-for q in questions_raw:
-    categories[q["subtype"] or "Misc"].append(q)
-
-category_names = sorted(categories.keys())
-for cat in category_names:
-    categories[cat].sort(key=lambda x:x["points"])
-
 # ---------- Game State ----------
 team_names = ["Team A","Team B"]
 team_scores = [0,0]
 current_team_idx = 0
+
 showing_overlay = False
 overlay_question = None
 overlay_metadata = {}
@@ -160,14 +108,85 @@ feedback_text = ""
 feedback_color = (0,0,0)
 feedback_timer = 0
 
-num_cols = len(category_names)
-max_rows = max(len(categories[c]) for c in category_names)
+categories = {}
+category_names = []
+max_rows = 0
 
+# ---------- File Selection ----------
+QUESTION_DIR = "./"
+question_files = sorted([f for f in os.listdir(QUESTION_DIR) if f.startswith("q") and f.endswith(".txt")])
+showing_file_select = True
+file_select_scroll = 0
+file_select_item_h = 50
+file_select_pad = 10
+
+def draw_file_selection():
+    screen.fill(BG)
+    title = font_large.render("Select Question Set", True, TEXT)
+    screen.blit(title, ((SCREEN_WIDTH-title.get_width())//2, 20))
+    start_y = 100 - file_select_scroll
+    for i, f in enumerate(question_files):
+        rect = pygame.Rect(LEFT_MARGIN, start_y + i*(file_select_item_h+file_select_pad),
+                           SCREEN_WIDTH-LEFT_MARGIN-RIGHT_MARGIN, file_select_item_h)
+        pygame.draw.rect(screen, TILE_COLOR, rect, border_radius=6)
+        fname = font_med.render(f, True, TEXT)
+        screen.blit(fname, (rect.x+10, rect.y+(file_select_item_h-fname.get_height())//2))
+
+# ---------- Load questions ----------
+def load_questions(filename):
+    global categories, category_names, max_rows, team_scores, current_team_idx
+    team_scores = [0,0]
+    current_team_idx = 0
+
+    questions_raw = []
+    with open(filename,"r",encoding="utf-8",newline="") as fh:
+        header_line = fh.readline()
+        delimiter = detect_delimiter(header_line)
+    with open(filename,"r",encoding="utf-8",newline="") as fh:
+        reader = csv.DictReader(fh, delimiter=delimiter)
+        for row in reader:
+            row_lc = {k.strip(): v for k,v in row.items()}
+            subtype = row_lc.get("subtype") or row_lc.get("category") or ""
+            qtext = row_lc.get("question") or ""
+            options = [row_lc.get(f"option{i}", "") for i in range(1,5)]
+            correct_raw = row_lc.get("correct") or ""
+            try:
+                time_allowed = int(row_lc.get("time") or 20)
+            except:
+                time_allowed = 20
+            square_text = row_lc.get("square_text") or "100"
+            try:
+                points = int(square_text)
+            except:
+                import re
+                m = re.search(r"\d+", str(square_text))
+                points = int(m.group()) if m else 100
+            questions_raw.append({
+                "subtype": subtype.strip(),
+                "question": qtext.strip(),
+                "options": [o.strip() for o in options],
+                "correct_raw": correct_raw.strip(),
+                "correct": parse_correct_field(correct_raw.strip()),
+                "time": time_allowed,
+                "square_text": str(square_text).strip(),
+                "points": points,
+                "used": False
+            })
+
+    categories = defaultdict(list)
+    for q in questions_raw:
+        categories[q["subtype"] or "Misc"].append(q)
+    category_names = sorted(categories.keys())
+    for cat in category_names:
+        categories[cat].sort(key=lambda x:x["points"])
+    max_rows = max(len(categories[c]) for c in category_names)
+
+# ---------- Grid & Board ----------
 def compute_grid():
     avail_w = SCREEN_WIDTH - LEFT_MARGIN - RIGHT_MARGIN
-    col_w = max((avail_w - (num_cols-1)*TILE_MARGIN)/num_cols, TILE_MIN_WIDTH)
+    col_w = max((avail_w - (len(category_names)-1)*TILE_MARGIN)/len(category_names), TILE_MIN_WIDTH)
     avail_h = SCREEN_HEIGHT - TOP_MARGIN - BOTTOM_MARGIN - CATEGORY_HEIGHT - CATEGORY_PADDING
-    tile_h = max(floor((avail_h - (max_rows-1)*TILE_MARGIN)/max_rows), TILE_MIN_HEIGHT)
+    tile_h = max(floor((avail_h - (max_rows-1)*TILE_MARGIN)/max_rows), TILE_MIN_HEIGHT) if max_rows>0 else TILE_MIN_HEIGHT
     return col_w, tile_h
 
 def draw_board():
@@ -207,9 +226,6 @@ def draw_board():
             pts = font_large.render(label, True, TEXT)
             screen.blit(pts,(col_x+tile_w/2-pts.get_width()/2, tile_y+tile_h/2-pts.get_height()/2))
 
-    help_s = font_small.render("Click a tile to open question.", True, TEXT)
-    screen.blit(help_s,(LEFT_MARGIN,SCREEN_HEIGHT-30))
-
 def get_tile_at(pos):
     x,y = pos
     tile_w, tile_h = compute_grid()
@@ -221,7 +237,8 @@ def get_tile_at(pos):
                 return col_idx,row_idx
     return None,None
 
-def open_overlay(col_idx, row_idx):
+# ---------- Overlay ----------
+def open_overlay(col_idx,row_idx):
     global showing_overlay, overlay_question, overlay_metadata
     cat = category_names[col_idx]
     q = categories[cat][row_idx]
@@ -231,10 +248,7 @@ def open_overlay(col_idx, row_idx):
     overlay_question = q
     overlay_metadata = {"col":col_idx,"row":row_idx,"option_rects":[]}
     correct = q["correct"]
-    if isinstance(correct,int):
-        overlay_metadata["correct_index"]=correct
-    else:
-        overlay_metadata["correct_index"]=None
+    overlay_metadata["correct_index"] = correct if isinstance(correct,int) else None
 
 def draw_overlay():
     pad = 20
@@ -261,6 +275,7 @@ def draw_overlay():
         option_rects.append(r)
     overlay_metadata["option_rects"]=option_rects
 
+# ---------- Handle click ----------
 def handle_option_click(idx):
     global showing_overlay, current_team_idx
     global overlay_question, overlay_metadata
@@ -292,6 +307,13 @@ def handle_option_click(idx):
     feedback_showing=True
     feedback_timer=FEEDBACK_DURATION
 
+def draw_feedback():
+    s = pygame.Surface((SCREEN_WIDTH,SCREEN_HEIGHT),pygame.SRCALPHA)
+    s.fill((0,0,0,180))
+    screen.blit(s,(0,0))
+    surf = font_large.render(feedback_text,True,feedback_color)
+    screen.blit(surf,((SCREEN_WIDTH-surf.get_width())//2,(SCREEN_HEIGHT-surf.get_height())//2))
+
 # ---------- Main loop ----------
 running=True
 while running:
@@ -300,29 +322,37 @@ while running:
         if e.type==pygame.QUIT:
             running=False
         elif e.type==pygame.MOUSEBUTTONDOWN and e.button==1:
-            mx,my=e.pos
-            if showing_overlay:
+            mx,my = e.pos
+            if showing_file_select:
+                start_y = 100 - file_select_scroll
+                for i, f in enumerate(question_files):
+                    rect = pygame.Rect(LEFT_MARGIN, start_y + i*(file_select_item_h+file_select_pad),
+                                       SCREEN_WIDTH-LEFT_MARGIN-RIGHT_MARGIN, file_select_item_h)
+                    if rect.collidepoint(mx,my):
+                        load_questions(os.path.join(QUESTION_DIR,f))
+                        showing_file_select = False
+                        break
+            elif showing_overlay:
                 for i,r in enumerate(overlay_metadata.get("option_rects",[])):
                     if r.collidepoint(mx,my):
                         handle_option_click(i)
                         break
             else:
-                col,row=get_tile_at((mx,my))
+                col,row = get_tile_at((mx,my))
                 if col is not None:
                     open_overlay(col,row)
 
-    draw_board()
-    if showing_overlay:
-        draw_overlay()
-    if feedback_showing:
-        s = pygame.Surface((SCREEN_WIDTH,SCREEN_HEIGHT),pygame.SRCALPHA)
-        s.fill((0,0,0,180))
-        screen.blit(s,(0,0))
-        surf = font_large.render(feedback_text,True,feedback_color)
-        screen.blit(surf,((SCREEN_WIDTH-surf.get_width())//2,(SCREEN_HEIGHT-surf.get_height())//2))
-        feedback_timer-=1
-        if feedback_timer<=0:
-            feedback_showing=False
+    if showing_file_select:
+        draw_file_selection()
+    else:
+        draw_board()
+        if showing_overlay:
+            draw_overlay()
+        if feedback_showing:
+            draw_feedback()
+            feedback_timer -= 1
+            if feedback_timer<=0:
+                feedback_showing=False
 
     pygame.display.flip()
 
