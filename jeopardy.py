@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-jeopardy.py - Pygame Jeopardy with selectable question files and feedback sounds
+jeopardy.py - Pygame Jeopardy with selectable question files, feedback sounds, and Go Back button
 """
 
 import os, csv, sys, pygame
@@ -27,8 +27,7 @@ TILE_MARGIN = 12
 TILE_MIN_HEIGHT = 64
 TILE_MIN_WIDTH = 120
 
-#FONT_NAME = "NotoSansSC-Regular.ttf"
-FONT_NAME = ""
+FONT_NAME = "NotoSansSC-Regular.ttf"
 FONT_SMALL = 18
 FONT_MED = 24
 FONT_LARGE = 30
@@ -52,10 +51,10 @@ screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 pygame.display.set_caption("Jeopardy")
 clock = pygame.time.Clock()
 
-font_small = pygame.font.SysFont(FONT_NAME, FONT_SMALL)
-font_med = pygame.font.SysFont(FONT_NAME, FONT_MED)
-font_large = pygame.font.SysFont(FONT_NAME, FONT_LARGE)
-font_team = pygame.font.SysFont(FONT_NAME, TEAM_FONT_SIZE)
+font_small = pygame.font.Font(FONT_NAME, FONT_SMALL)
+font_med = pygame.font.Font(FONT_NAME, FONT_MED)
+font_large = pygame.font.Font(FONT_NAME, FONT_LARGE)
+font_team = pygame.font.Font(FONT_NAME, TEAM_FONT_SIZE)
 
 # ---------- Load sounds ----------
 try:
@@ -226,6 +225,11 @@ def draw_board():
             pts = font_large.render(label, True, TEXT)
             screen.blit(pts,(col_x+tile_w/2-pts.get_width()/2, tile_y+tile_h/2-pts.get_height()/2))
 
+    # --- back button ---
+    global back_button_rect
+    back_button_rect = get_back_button_rect()
+    draw_back_button()
+
 def get_tile_at(pos):
     x,y = pos
     tile_w, tile_h = compute_grid()
@@ -275,6 +279,20 @@ def draw_overlay():
         option_rects.append(r)
     overlay_metadata["option_rects"]=option_rects
 
+# ---------- Back Button ----------
+def get_back_button_rect():
+    tile_w, tile_h = compute_grid()
+    board_bottom = TOP_MARGIN + CATEGORY_HEIGHT + CATEGORY_PADDING + max_rows*(tile_h+TILE_MARGIN)
+    rect = pygame.Rect((SCREEN_WIDTH-200)//2, board_bottom + 20, 200, 50)
+    return rect
+
+def draw_back_button():
+    rect = back_button_rect
+    pygame.draw.rect(screen, TILE_COLOR, rect, border_radius=6)
+    label = font_small.render("Change Question Set", True, TEXT)
+    screen.blit(label, (rect.x + (rect.width - label.get_width())//2,
+                        rect.y + (rect.height - label.get_height())//2))
+
 # ---------- Handle click ----------
 def handle_option_click(idx):
     global showing_overlay, current_team_idx
@@ -316,8 +334,10 @@ def draw_feedback():
 
 # ---------- Main loop ----------
 running=True
+back_button_rect = pygame.Rect(0,0,0,0)  # initialize
 while running:
     clock.tick(FPS)
+    mx,my = 0,0
     for e in pygame.event.get():
         if e.type==pygame.QUIT:
             running=False
@@ -341,6 +361,13 @@ while running:
                 col,row = get_tile_at((mx,my))
                 if col is not None:
                     open_overlay(col,row)
+                elif back_button_rect.collidepoint(mx,my):
+                    showing_file_select = True
+                    overlay_question = None
+                    overlay_metadata.clear()
+                    feedback_showing = False
+                    team_scores = [0,0]
+                    current_team_idx = 0
 
     if showing_file_select:
         draw_file_selection()
