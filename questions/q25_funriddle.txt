@@ -1,0 +1,31 @@
+subtype	question	option1	option2	option3	option4	correct	time	square_text
+What Am I?	I have cities, but no houses. I have mountains, but no trees. I have water, but no fish. What am I?	Globe	Book	Map	Ocean	3	15	100
+What Am I?	What has to be broken before you can use it?	A Promise	An Egg	A Secret	A Law	2	15	200
+What Am I?	What is full of holes but still holds water?	A Sponge	A Bucket	A Net	A Sieve	1	20	300
+What Am I?	I am light as a feather, yet the strongest person can't hold me for 5 minutes. What am I?	Breath	Dust	Sleep	A Balloon	1	20	400
+What Am I?	What question can you never answer "Yes" to?	Are you happy?	Are you asleep yet?	Is today Tuesday?	Will you help me?	2	25	500
+Tricky Words	What word is spelled incorrectly in every dictionary?	Wrong	Misspell	Incorrectly	Dictionary	3	15	100
+Tricky Words	What has an eye but cannot see?	Needle	Potato	Hurricane	Camera	1	15	200
+Tricky Words	What has a neck but no head?	A Giraffe	A Sweater	A Bottle	A Shirt	3	20	300
+Tricky Words	I am always hungry, I must always be fed, The finger I touch will soon turn red. What am I?	Fire	A Baby	A Plant	A Vampire	1	20	400
+Tricky Words	What runs around the whole yard without moving?	A Fence	A Dog	A River	A Shadow	1	25	500
+Math & Logic	Two people are standing on opposite sides of a river. They cannot talk to each other, but they can see each other. How do they communicate?	Use sign language	Wave a flag	They use a mirror	The river is narrow	3	15	100
+Math & Logic	A man shaves 20 times a day. He still has a beard. How is this possible?	He shaves others	He is bald	He uses an electric razor	It's not possible	1	15	200
+Math & Logic	What 4-letter word can be written forward, backward, or upside down, and still be read left to right?	Noon	Level	Race	Swim	1	20	300
+Math & Logic	If you have it, you don't share it. If you share it, you don't have it. What is it?	A Joke	A Secret	Money	A Pencil	2	20	400
+Math & Logic	What number increases in value when you turn it upside down?	6	9	1	8	1	25	500
+Time & Space	What is always coming, but never arrives?	Tomorrow	The Mail	Summer	A Train	1	15	100
+Time & Space	What is in the middle of nowhere?	The Letter O	The Earth	An Oasis	Absolute Zero	1	15	200
+Time & Space	What disappears the moment you say its name?	A Bubble	Quiet	Wind	A Flash	2	20	300
+Time & Space	I have no life, but I can die. What am I?	A Cell	A Battery	A Star	A Ghost	2	20	400
+Time & Space	I go all around the world, but always stay in a corner. What am I?	A Map	A Stamp	An Envelope	A Compass	2	25	500
+Nature's Puzzles	What can move a car, but doesn't have legs?	Wind	A Truck	A Hand	Gasoline	1	15	100
+Nature's Puzzles	What is always hungry and needs to be fed, but if it drinks water it dies?	A Shark	A Worm	Fire	A Camel	3	15	200
+Nature's Puzzles	It is poured, but it is not a drink. You can sleep in it, but it is not a bed. What is it?	Coffee	Sand	A River	Cement	2	20	300
+Nature's Puzzles	What is tall when it is young, and short when it is old?	A Person	A Candle	A Tree	A Building	2	20	400
+Nature's Puzzles	What has keys, but can't open locks?	A Piano	A Guitar	A Keyboard	A Map	3	25	500
+Homophones & Plays	What is as big as an elephant, but weighs nothing?	Its Shadow	A Feather	A Balloon	A Cloud	1	15	100
+Homophones & Plays	What kind of room has no doors or windows?	A Closet	A Storage Room	A Mushroom	A Basement	3	15	200
+Homophones & Plays	What has to do with cars, is in a theater, and has three rings?	A Circus	A Parking Lot	A Traffic Light	A Drive-In Movie	3	20	300
+Homophones & Plays	What is black when you buy it, red when you use it, and gray when you throw it away?	Charcoal	Coal	An Old Shoe	A Tomato	2	20	400
+Homophones & Plays	What is at the end of a rainbow?	The letter W	Gold	A Leprechaun	Rain	1	25	500

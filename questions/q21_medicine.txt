@@ -1,0 +1,41 @@
+subtype	question	option1	option2	option3	option4	correct	time	square_text
+Physiology	Which organ produces erythropoietin?	Kidney	Liver	Spleen	Pancreas	1	25	100
+Physiology	Which ion is primarily responsible for depolarization of cardiac myocytes?	Na+	K+	Ca2+	Cl-	1	25	200
+Physiology	Where is the majority of water reabsorbed in the nephron?	Proximal tubule	Distal tubule	Loop of Henle	Collecting duct	1	30	300
+Physiology	Which hormone increases basal metabolic rate?	T3	T4	Cortisol	Insulin	1	30	400
+Physiology	Which part of the brain regulates circadian rhythm?	Hypothalamus	Pineal gland	Thalamus	Pituitary	2	30	500
+Pharmacology	Which drug is a beta-1 selective blocker?	Propranolol	Metoprolol	Nadolol	Labetalol	2	25	100
+Pharmacology	Which drug inhibits HMG-CoA reductase?	Atorvastatin	Furosemide	Lisinopril	Amlodipine	1	25	200
+Pharmacology	Which antibiotic inhibits cell wall synthesis?	Penicillin	Ciprofloxacin	Tetracycline	Erythromycin	1	30	300
+Pharmacology	Which drug is used for opioid overdose?	Naloxone	Flumazenil	Atropine	Propranolol	1	30	400
+Pharmacology	Which drug is a proton pump inhibitor?	Omeprazole	Ranitidine	Aluminum hydroxide	Misoprostol	1	30	500
+Pathology	Which type of necrosis is typical in myocardial infarction?	Coagulative	Liquefactive	Caseous	Fat	1	25	100
+Pathology	Which cancer is most strongly associated with smoking?	Lung	Colon	Prostate	Breast	1	25	200
+Pathology	Which disease shows “butterfly rash”?	Systemic lupus erythematosus	Rheumatoid arthritis	Scleroderma	Dermatomyositis	1	30	300
+Pathology	Which cell type is increased in chronic myeloid leukemia?	Neutrophils	Basophils	Lymphocytes	Eosinophils	2	30	400
+Pathology	Which lipid is increased in familial hypercholesterolemia?	LDL	HDL	VLDL	Triglycerides	1	30	500
+Microbiology	Which bacteria is Gram-positive cocci in clusters?	Staphylococcus aureus	Streptococcus pyogenes	Neisseria meningitidis	Escherichia coli	1	25	100
+Microbiology	Which bacteria is acid-fast?	Mycobacterium tuberculosis	Staphylococcus aureus	Clostridium difficile	Salmonella typhi	1	25	200
+Microbiology	Which virus has segmented RNA?	Influenza	HIV	Hepatitis B	Rhinovirus	1	30	300
+Microbiology	Which parasite causes malaria?	Toxoplasma Plasmodium Giardia Entamoeba	2	30	400
+Microbiology	Which bacteria produces spores?	Clostridium tetani	Staphylococcus aureus	Neisseria gonorrhoeae	Mycoplasma pneumoniae	1	30	500
+Immunology	Which antibody is predominant in mucosal surfaces?	IgA	IgG	IgM	IgE	1	25	100
+Immunology	Which cytokine is essential for Th1 differentiation?	IL-12	IL-4	IL-10	TNF-alpha	1	25	200
+Immunology	Which HLA is associated with ankylosing spondylitis?	HLA-B27	HLA-DR3	HLA-B8	HLA-DR4	1	30	300
+Immunology	Which cell presents antigen to naive T cells?	Dendritic cell	B cell	T cell	Macrophage	1	30	400
+Immunology	Which immunoglobulin mediates type I hypersensitivity?	IgE	IgG	IgM	IgA	1	30	500
+Biochemistry & Genetics	Which enzyme converts glucose to glucose-6-phosphate?	Hexokinase	Phosphofructokinase	Pyruvate kinase	Lactate dehydrogenase	1	25	100
+Biochemistry & Genetics	Which amino acid is essential?	Tryptophan	Glycine	Alanine	Glutamine	1	25	200
+Biochemistry & Genetics	Which vitamin is a cofactor for carboxylation reactions?	Biotin	Folate	Vitamin B12	Vitamin C	1	30	300
+Biochemistry & Genetics	Which mutation changes a single nucleotide but not the amino acid?	Silent	Missense	Nonsense	Frameshift	1	30	400
+Biochemistry & Genetics	Which process produces ATP without oxygen?	Anaerobic glycolysis	Krebs cycle	Oxidative phosphorylation	Pentose phosphate	1	30	500
+Anatomy	Which cranial nerve controls the muscles of facial expression?	CN V	CN VII	CN IX	CN X	2	25	100
+Anatomy	Which artery supplies the anterior cerebral cortex?	ACA	MCA	PCA	ICA	1	25	200
+Anatomy	Which structure separates the thoracic and abdominal cavities?	Diaphragm	Sternum	Rib cage	Pericardium	1	30	300
+Anatomy	Which bone is part of the axial skeleton?	Sternum	Scapula	Humerus	Femur	1	30	400
+Anatomy	Which ligament connects the radius and ulna?	Annular ligament	Coracoclavicular	ACL	PCL	1	30	500
+Behavioral Science	Which defense mechanism is projecting unacceptable thoughts onto others?	Projection	Displacement	Regression	Sublimation	1	25	100
+Behavioral Science	Which memory type is responsible for facts and knowledge?	Semantic	Episodic	Procedural	Sensory	1	25	200
+Behavioral Science	Which part of the brain is responsible for fear response?	Amygdala	Hippocampus	Thalamus	Prefrontal cortex	1	30	300
+Behavioral Science	Which test assesses depression severity?	Beck Depression Inventory	Hamilton Anxiety Scale	MMSE	Mini-Cog	1	30	400
+Behavioral Science	Which attachment style shows distress when caregiver leaves and avoids comfort?	Avoidant	Secure	Anxious	Disorganized	1	30	500

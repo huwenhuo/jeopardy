@@ -1,0 +1,31 @@
+subtype	question	option1	option2	option3	option4	correct	time	square_text
+NBA	Which player holds the record for the most career assists in NBA history?	Magic Johnson	LeBron James	John Stockton	Jason Kidd	3	30	100
+NBA	The term for an illegal defensive strategy where a player stays in the key for more than three seconds is called what?	Blocking	Carry	Defensive Three Seconds	Goaltending	3	30	200
+NBA	Before moving to Los Angeles, the Lakers franchise originated in which city?	Boston	Seattle	Minneapolis	Detroit	3	30	300
+NBA	Which player holds the record for most NBA championships with 11?	Michael Jordan	LeBron James	Bill Russell	Kareem Abdul-Jabbar	3	30	400
+NBA	Who is the only player to score 100 points in a single NBA game?	Kobe Bryant	Michael Jordan	Wilt Chamberlain	David Robinson	3	30	500
+NFL	What is the name of the trophy awarded to the winner of the Super Bowl?	Heisman Trophy	Commissioner's Trophy	Lombardi Trophy	Stanley Cup	3	30	100
+NFL	How many points is a safety worth in American football?	1 point	3 points	2 points	4 points	3	30	200
+NFL	This team was originally known as the New York Titans before being renamed.	New York Giants	New York Jets	Miami Dolphins	Baltimore Ravens	2	30	300
+NFL	Which team has the most Super Bowl appearances without ever winning the championship?	Cleveland Browns	Detroit Lions	Buffalo Bills	Arizona Cardinals	3	30	400
+NFL	Which player holds the record for the most career sacks (200) in NFL history?	Reggie White	Lawrence Taylor	Bruce Smith	Deacon Jones	3	30	500
+MLB	Which team holds the record for the most World Series titles?	Boston Red Sox	Los Angeles Dodgers	New York Yankees	St. Louis Cardinals	3	30	100
+MLB	What is the common nickname for baseball player George Herman Ruth?	The Iron Horse	Joltin' Joe	The Bambino	Stan The Man	3	30	200
+MLB	What is the term for a batter hitting a home run with the bases loaded?	Grand Slam	Triple Crown	Grand Slam	Perfect Game	1	30	300
+MLB	The seventh-inning stretch tradition in baseball is famously accompanied by which Neil Diamond song at Fenway Park?	"Sweet Home Alabama"	"Take Me Out to the Ballgame"	"Sweet Caroline"	"Piano Man"	3	30	400
+MLB	Who broke Babe Ruth's all-time career home run record in 1974?	Willie Mays	Barry Bonds	Hank Aaron	Ken Griffey Jr.	3	30	500
+SOCCER	Which country has won the FIFA Men's World Cup the most times?	Germany	Italy	Brazil	Argentina	3	30	100
+SOCCER	In soccer, what is the penalty for a player accumulating two yellow cards in a single game?	Send-off	Warning	Red Card	Free Kick	3	30	200
+SOCCER	The intense rivalry game between FC Barcelona and Real Madrid is known by what name?	Der Klassiker	The Derby	El Clásico	Superclásico	3	30	300
+SOCCER	The Champions League trophy is named after which individual?	Jules Rimet	Henri Delaunay	Stanley Rous	Gianni Infantino	2	30	400
+SOCCER	What is the name of the international soccer governing body?	UEFA	CONCACAF	FIFA	IOC	3	30	500
+OLYMPICS	The modern Olympics are held every how many years?	2 years	5 years	4 years	6 years	3	30	100
+OLYMPICS	What five colors make up the five interlocking rings on the Olympic flag (excluding the white background)?	Red, Green, Blue, Yellow, Purple	Blue, Yellow, Black, Green, Red	Blue, Green, Red, Orange, Black	White, Gold, Silver, Bronze, Black	2	30	200
+OLYMPICS	Who is the most decorated Olympian of all time, with 28 medals in swimming?	Carl Lewis	Larisa Latynina	Michael Phelps	Usain Bolt	3	30	300
+OLYMPICS	In the first-ever modern Olympic Games in 1896, what were the first-place winners awarded?	Gold Medals	Gold Coins	Silver Medals	Laurel Wreaths	3	30	400
+OLYMPICS	Tug of war was an Olympic event for how many games between 1900 and 1920?	2 events	3 events	5 events	7 events	3	30	500
+GENERAL	What sport is referred to as "The Sweet Science"?	Wrestling	Baseball	Boxing	Gymnastics	3	30	100
+GENERAL	In what game is the term "love" used to represent a score of zero?	Pool	Bowling	Tennis	Volleyball	3	30	200
+GENERAL	What is the common name for three consecutive strikes in the sport of bowling?	Triple	Hat Trick	Turkey	Perfect	3	30	300
+GENERAL	Which sport uses a shuttlecock instead of a ball?	Squash	Table Tennis	Badminton	Racquetball	3	30	400
+GENERAL	The Tour de France is an annual event for this sport.	Running	Swimming	Cycling	Rowing	3	30	500

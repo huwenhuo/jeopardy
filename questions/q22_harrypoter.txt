@@ -1,0 +1,32 @@
+subtype	question	option1	option2	option3	option4	correct	time	square_text
+Characters	What house is Harry Potter in?	Gryffindor	Slytherin	Ravenclaw	Hufflepuff	1	20	100
+Characters	Who is the headmaster of Hogwarts for most of the series?	Severus Snape	Albus Dumbledore	Minerva McGonagall	Rubeus Hagrid	2	20	200
+Characters	Who is Harry’s godfather?	Sirius Black	Remus Lupin	Severus Snape	Peter Pettigrew	1	25	300
+Characters	Which Weasley is the youngest?	Ron	Ginny	Fred	George	4	25	400
+Characters	Which character kills Dumbledore?	Draco Malfoy	Severus Snape	Bellatrix Lestrange	Voldemort	2	25	500
+Characters	Who becomes Minister for Magic after Voldemort’s defeat?	Harry Potter	Arthur Weasley	Kingsley Shacklebolt	Albus Dumbledore	3	30	600
+Spells & Potions	Which spell is used to disarm an opponent?	Avada Kedavra	Expelliarmus	Stupefy	Crucio	2	20	100
+Spells & Potions	Which potion grants luck for a short time?	Veritaserum	Polyjuice	Felix Felicis	Amortentia	3	20	200
+Spells & Potions	What is the killing curse?	Crucio	Imperio	Avada Kedavra	Expelliarmus	3	25	300
+Spells & Potions	Which spell unlocks doors?	Alohomora	Accio	Lumos	Nox	1	25	400
+Spells & Potions	Which spell produces light at the wand tip?	Lumos	Nox	Incendio	Expecto Patronum	1	25	500
+Spells & Potions	Which potion allows someone to temporarily take another person’s appearance?	Veritaserum	Polyjuice	Felix Felicis	Potion of Healing	2	30	600
+Creatures & Magical Objects	What type of creature is Dobby?	House-elf	Goblin	Centaur	Troll	1	20	100
+Creatures & Magical Objects	What is the name of Hagrid’s three-headed dog?	Fluffy	Fang	Norbert	Pigwidgeon	1	20	200
+Creatures & Magical Objects	Which object is used to store a part of a soul?	Horcrux	Horntail	Wand	Invisibility Cloak	1	25	300
+Creatures & Magical Objects	What is Aragog?	Centaur	Acromantula	Troll	Goblin	2	25	400
+Creatures & Magical Objects	Which dragon does Harry face in the Triwizard Tournament?	Hungarian Horntail	Swedish Short-Snout	Welsh Green	Romanian Ridgeback	1	25	500
+Creatures & Magical Objects	Which magical object shows memories?	Portkey	Marauder’s Map	Pensieve	Time-Turner	3	30	600
+Hogwarts & Locations	Which platform at King’s Cross leads to Hogwarts?	9	9 ¾	10	8 ½	2	20	100
+Hogwarts & Locations	Who teaches Potions at Hogwarts for most of the series?	Severus Snape	Gilderoy Lockhart	Remus Lupin	Horace Slughorn	1	20	200
+Hogwarts & Locations	Which house ghost is Nearly Headless Nick?	Gryffindor	Hufflepuff	Ravenclaw	Slytherin	1	25	300
+Hogwarts & Locations	Where does the Mirror of Erised reside?	Gryffindor Tower	Dumbledore’s Office	Hogwarts Library	Forbidden Forest	1	25	400
+Hogwarts & Locations	Which Hogwarts house values cunning and ambition?	Gryffindor	Slytherin	Ravenclaw	Hufflepuff	2	25	500
+Hogwarts & Locations	What is the name of the Hogwarts express train conductor?	Wormtail	Ernie Prang	Percy Weasley	Fang	2	30	600
+Events & Plot	Who kills Voldemort in the final battle?	Harry Potter	Neville Longbottom	Hermione Granger	Ron Weasley	1	20	100
+Events & Plot	Who opens the Chamber of Secrets?	Tom Riddle	Harry Potter	Ginny Weasley	Dobby	1	20	200
+Events & Plot	What creature is released during the Triwizard Tournament task in the lake?	Merpeople	Voldemort’s snake	Dragons	Acromantulas	1	25	300
+Events & Plot	Who betrays Harry to Voldemort in the Department of Mysteries?	Peter Pettigrew	Severus Snape	Draco Malfoy	Cedric Diggory	1	25	400
+Events & Plot	Which tournament does Harry compete in during his fourth year?	Triwizard	Quidditch	Cup of Houses	Dueling Championship	1	25	500
+Events & Plot	Who destroys the final Horcrux?	Harry Potter	Neville Longbottom	Hermione Granger	Ron Weasley	2	30	600
+Events & Plot	Which event causes Sirius Black’s death?	Battle of Hogwarts	Dementor attack	Harry falls into Lake	Ministry duel	2	30	700

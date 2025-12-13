@@ -1,0 +1,31 @@
+subtype	question	option1	option2	option3	option4	correct	time	square_text
+Riddles	What has roots that nobody sees and is taller than trees?	Mountain	Cloud	River	Cave	1	20	100
+Riddles	What has a head, a tail, but no body?	Kite	Coin	Snake	Comet	2	20	200
+Riddles	What has a mouth but never eats?	Cave	River	Jar	Pipe	2	25	300
+Riddles	What runs around a backyard but never moves?	Fence	Dog	Hose	Gate	1	25	400
+Riddles	What has many keys but can‚Äôt listen to music?	Piano	Keyboard	Lockbox	Calculator	1	25	500
+Math & Numbers	Which number is always even when spelled out?	Seven	Eleven	Twelve	Nine	3	20	100
+Math & Numbers	What digit appears the most in numbers 1‚Äì100?	1	0	7	9	1	20	200
+Math & Numbers	What number becomes larger when you turn it upside down?	6	8	9	0	3	25	300
+Math & Numbers	Which number multiplied by 0 stays the same?	0	1	2	Any number	4	25	400
+Math & Numbers	If you add me to myself, I remain the same. What number am I?	0	1	2	-1	1	25	500
+Logic & Puzzles	A rooster lays an egg on a roof. Which side does it roll?	Left	Right	Both	Roosters don‚Äôt lay eggs	4	20	100
+Logic & Puzzles	Which is heavier: a ton of feathers or a ton of bricks?	Feathers	Bricks	Same	Unknown	3	20	200
+Logic & Puzzles	A man shaves 10 times a day but still has a beard. Why?	Magic	Photos	He‚Äôs a barber	It grows too fast	3	25	300
+Logic & Puzzles	What can fill a room but takes no space?	Light	Water	Air	Sound	1	25	400
+Logic & Puzzles	What disappears the moment you say its name?	Silence	Time	Shadow	Secret	1	25	500
+Word Play	What 4-letter word becomes a different word when read backward?	Live	Stay	Time	Walk	1	20	100
+Word Play	What word starts with T, ends with T, and has T inside?	Tent	Treat	Teapot	Tablet	3	20	200
+Word Play	Unscramble: ‚ÄúRACT‚Äù	Cart	Track	Cat	Car	1	25	300
+Word Play	Which word has five letters but is pronounced as one?	Queue	Quiet	Quote	Quail	1	25	400
+Word Play	Which of these is a palindrome?	Level	Plane	Book	Tiger	1	25	500
+Trivia & Curiosities	What gets bigger the more you take away?	Hole	Mountain	Room	Box	1	20	100
+Trivia & Curiosities	What has legs but cannot walk?	Table	Statue	Clock	Both 1 & 2	4	20	200
+Trivia & Curiosities	What has wings but cannot fly?	Plane	Building	Penguin	Time	4	25	300
+Trivia & Curiosities	What breaks but never falls?	Light	Morning	Day	Both 2 & 3	4	25	400
+Trivia & Curiosities	What falls but never breaks?	Night	Raindrop	Feather	Rock	1	25	500
+Mystery Objects	What can you catch but not throw?	Cold	Fish	Ball	Book	1	20	100
+Mystery Objects	What has a ring but no finger?	Phone	Bell	Alarm	All of these	4	20	200
+Mystery Objects	What has a tail but no body?	Comet	Shirt	Worm	Cloud	1	25	300
+Mystery Objects	What has a body but no bones?	Jellyfish	Robot	Cloud	Bag	1	25	400
+Mystery Objects	What has a back but no spine?	Chair	Book	Table	Deck	1	25	500

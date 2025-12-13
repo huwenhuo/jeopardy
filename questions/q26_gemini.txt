@@ -1,0 +1,31 @@
+subtype	question	option1	option2	option3	option4	correct	time	square_text
+HISTORY	What was the final destination of the Oregon Trail in the 19th century?	Portland, Oregon	Astoria, Oregon	Fort Vancouver, Washington	Oregon City, Oregon	4	20	100
+HISTORY	Which figure famously said, "Give me liberty, or give me death!" in 1775?	George Washington	Thomas Jefferson	Patrick Henry	Paul Revere	3	20	200
+HISTORY	Who was the first female Prime Minister of the United Kingdom?	Margaret Thatcher	Theresa May	Indira Gandhi	Golda Meir	1	20	300
+HISTORY	The fall of the Berlin Wall occurred in what year?	1987	1989	1991	1990	2	20	400
+HISTORY	The Hundred Years' War was primarily fought between which two countries?	France and Italy	England and France	England and Spain	France and Spain	2	20	500
+SCIENCE	What is the primary function of the mitochondria within a eukaryotic cell?	Protein synthesis	Waste disposal	Energy production (ATP)	Cell division	3	20	100
+SCIENCE	Which fundamental particle is responsible for giving other particles mass, according to the Standard Model?	The Graviton	The Photon	The Higgs Boson	The Neutrino	3	20	200
+SCIENCE	Which color has the highest frequency in the visible light spectrum?	Red	Green	Yellow	Violet	4	20	300
+SCIENCE	The Richter scale is used to measure the magnitude of what natural phenomenon?	Tornados	Hurricanes	Volcanic Eruptions	Earthquakes	4	20	400
+SCIENCE	Which type of telescope uses lenses to focus light and form an image?	Reflector	Refractor	Cassegrain	Schmidt-Cassegrain	2	20	500
+LITERATURE	In Homer's "The Odyssey," who is the loyal dog that recognizes Odysseus upon his return after 20 years?	Argus	Laertes	Eurycleia	Telemachus	1	20	100
+LITERATURE	What animal does Captain Ahab relentlessly pursue in Herman Melville's novel "Moby Dick"?	A Great White Shark	A Sperm Whale	A Giant Squid	A Blue Whale	2	20	200
+LITERATURE	Which author wrote the dystopian novel "1984"?	Aldous Huxley	George Orwell	Ray Bradbury	Isaac Asimov	2	20	300
+LITERATURE	What is the name of the futuristic supercomputer that controls the world in Arthur C. Clarke's "2001: A Space Odyssey"?	Skynet	HAL 9000	Deep Blue	WOPR	2	20	400
+LITERATURE	"Ask not what your country can do for you—ask what you can do for your country." Who delivered this line?	Abraham Lincoln	Franklin D. Roosevelt	John F. Kennedy	Martin Luther King Jr.	3	20	500
+GEOGRAPHY	The Strait of Gibraltar connects the Atlantic Ocean to which other body of water?	The North Sea	The Mediterranean Sea	The Black Sea	The Baltic Sea	2	20	100
+GEOGRAPHY	Which South American capital city is situated at the highest elevation?	La Paz, Bolivia	Quito, Ecuador	Bogotá, Colombia	Cusco, Peru	1	20	200
+GEOGRAPHY	Which country is both an island and a continent?	Greenland	Australia	Madagascar	New Zealand	2	20	300
+GEOGRAPHY	Which of the following mountain ranges is located in North America?	The Andes	The Alps	The Rockies	The Himalayas	3	20	400
+GEOGRAPHY	What is the highest mountain peak in Africa?	Mount Kenya	Mount Kilimanjaro	Mount Elbrus	Mount Stanley	2	20	500
+FILM	Which 1999 film features the famous line, "The first rule of Fight Club is: You do not talk about Fight Club"?	The Matrix	American Beauty	Fight Club	Pulp Fiction	3	20	100
+FILM	Before becoming a major director, Christopher Nolan first gained critical acclaim with which non-linear thriller?	The Prestige	Memento	Insomnia	Following	2	20	200
+FILM	What fictional town is the setting for the popular TV show "The Simpsons"?	South Park	Quahog	Springfield	Shelbyville	3	20	300
+FILM	Who directed the 1975 classic film "Jaws"?	George Lucas	Steven Spielberg	Francis Ford Coppola	Stanley Kubrick	2	20	400
+FILM	Which actress won the Academy Award for Best Actress for her role as Queen Elizabeth II in "The Queen"?	Cate Blanchett	Helen Mirren	Meryl Streep	Nicole Kidman	2	20	500
+TECHNOLOGY	What does the acronym "HTML" stand for in web development?	HyperText Markup Language	High Technology Modern Language	Hyperlink and Text Management Link	Home Tool Markup Language	1	20	100
+TECHNOLOGY	What company developed the programming language Python?	Microsoft	Google	Centrum Wiskunde & Informatica (CWI)	Apple	3	20	200
+TECHNOLOGY	What is the term for a small file stored on a user's computer by a web browser?	Cache	Cookie	Session	Token	2	20	300
+TECHNOLOGY	Which company is known for creating the popular video game console PlayStation?	Microsoft	Nintendo	Sony	Sega	3	20	400
+TECHNOLOGY	What unit is used to measure the rate of data transfer in telecommunications?	Hertz (Hz)	Byte (B)	Baud	Bit per second (bps)	4	20	500

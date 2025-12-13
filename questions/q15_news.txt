@@ -1,0 +1,31 @@
+subtype	question	option1	option2	option3	option4	correct	time	square_text
+World News	Which country recently hosted COP26 climate summit?	USA	UK	France	Germany	2	20	100
+World News	What is the capital of Ukraine?	Kyiv	Moscow	Warsaw	Prague	1	20	200
+World News	The United Nations headquarters is located in which city?	Geneva	New York	Vienna	Brussels	2	25	300
+World News	Which country left the European Union in 2020?	Germany	France	United Kingdom	Italy	3	25	400
+World News	Who is the Secretary-General of the United Nations as of 2025?	António Guterres	Ban Ki-moon	Kofi Annan	Javier Pérez	1	25	500
+World News	Which country experienced the largest earthquake in 2023?	Japan	Turkey	Chile	Indonesia	2	30	600
+U.S. News	Who is the current President of the United States?	Joe Biden	Donald Trump	Kamala Harris	Barack Obama	1	20	100
+U.S. News	The Capitol building is located in which city?	New York	Washington D.C.	Boston	Philadelphia	2	20	200
+U.S. News	Which U.S. state is the most populous?	California	Texas	Florida	New York	1	25	300
+U.S. News	The Supreme Court has how many justices?	7	9	11	5	2	25	400
+U.S. News	Which amendment guarantees freedom of speech?	1st	2nd	4th	5th	1	25	500
+U.S. News	The U.S. Congress is made up of which two chambers?	House & Senate	House & Cabinet	Senate & Court	Cabinet & Court	1	30	600
+Science & Technology News	Who developed the first successful mRNA COVID-19 vaccine?	Pfizer & BioNTech	Moderna	Johnson & Johnson	AstraZeneca	1	20	100
+Science & Technology News	The Hubble Space Telescope primarily observes in which spectrum?	Infrared	Ultraviolet	Visible	Radio	3	20	200
+Science & Technology News	What is the name of the Mars rover that landed in 2021?	Perseverance	Curiosity	Spirit	Opportunity	1	25	300
+Science & Technology News	Which technology is key for blockchain cryptocurrency?	AI	IoT	Quantum Computing	Distributed Ledger	4	25	400
+Science & Technology News	CRISPR is used for which purpose?	Gene editing	Space exploration	Climate monitoring	AI training	1	25	500
+Science & Technology News	The first human to travel to space was from which country?	USA	USSR	China	Germany	2	30	600
+Sports News	Which country won the 2022 FIFA World Cup?	Brazil	Germany	Argentina	France	3	20	100
+Sports News	The Super Bowl is the championship game of which sport?	Basketball	Football	Baseball	Soccer	2	20	200
+Sports News	Who holds the record for most Olympic gold medals?	Michael Phelps	Usain Bolt	Carl Lewis	Simone Biles	1	25	300
+Sports News	The NBA is the professional league for which sport?	Baseball	Basketball	Hockey	Soccer	2	25	400
+Sports News	Wimbledon is a major tournament in which sport?	Tennis	Golf	Badminton	Table Tennis	1	25	500
+Sports News	Which country hosted the 2020 Summer Olympics?	Japan	China	UK	Brazil	1	30	600
+Entertainment & Culture	Which film won the Oscar for Best Picture in 2023?	Everything Everywhere All at Once	Top Gun: Maverick	Avatar 2	The Fabelmans	1	20	100
+Entertainment & Culture	Who is the author of “Harry Potter” series?	J.K. Rowling	Suzanne Collins	Rick Riordan	Philip Pullman	1	20	200
+Entertainment & Culture	The Grammy Awards are for which field?	Film	Music	Literature	Theater	2	25	300
+Entertainment & Culture	Which streaming platform released “Stranger Things”?	Hulu	Disney+	Netflix	Amazon Prime	3	25	400
+Entertainment & Culture	Which singer is known as the “Queen of Pop”?	Madonna	Beyoncé	Lady Gaga	Taylor Swift	1	25	500
+Entertainment & Culture	The Oscars are officially called what?	Academy Awards	Golden Globes	BAFTA	Emmys	1	30	600

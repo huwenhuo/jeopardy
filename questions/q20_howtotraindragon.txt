@@ -1,0 +1,32 @@
+subtype	question	option1	option2	option3	option4	correct	time	square_text
+Characters	Who is the main character of How to Train Your Dragon?	Hiccup	Astrid	Stoick	Snotlout	1	20	100
+Characters	Who is Hiccup’s best friend?	Astrid	Toothless	Gobber	Fishlegs	2	20	200
+Characters	Who is the chief of Berk?	Stoick	Hiccup	Gobber	Snotlout	1	25	300
+Characters	Who is Hiccup’s love interest?	Astrid	Valka	Ruffnut	Hiccup	1	25	400
+Characters	Which character is known for being strong and tough?	Snotlout	Gobber	Hiccup	Stoick	2	25	500
+Characters	Who is Hiccup’s mother?	Valka	Astrid	Heather	Ruffnut	1	30	600
+Dragons	What type of dragon is Toothless?	Night Fury	Deadly Nadder	Gronckle	Monstrous Nightmare	1	20	100
+Dragons	Which dragon can shoot fire from its mouth?	Grimmel’s Dragon	Deadly Nadder	Gronckle	Night Fury	4	20	200
+Dragons	What color is Toothless?	Black	Red	Green	Blue	1	25	300
+Dragons	Which dragon is known for explosive stomachs?	Gronckle	Monstrous Nightmare	Hideous Zippleback	Deadly Nadder	1	25	400
+Dragons	Which dragon has two heads?	Hobblegrunt	Hideous Zippleback	Thunderdrum	Night Fury	2	25	500
+Dragons	Which dragon is the queen of the dragon world in the second movie?	Cloudjumper	Stormfly	Red Death	Light Fury	4	30	600
+Plot & Events	Who trains Toothless to fly without fear?	Hiccup	Astrid	Snotlout	Gobber	1	20	100
+Plot & Events	Which festival celebrates dragons in Berk?	Dragon Festival	Berk Day	Hiccup Day	Toothless Festival	1	20	200
+Plot & Events	Who is the main antagonist in the first movie?	Ruffnut	Grimmel	Stoick	Druig	2	25	300
+Plot & Events	Which event causes Hiccup to meet Toothless?	Dragon attack	Forest trip	Fishing accident	Race	1	25	400
+Plot & Events	Who destroys the dragon trap at the start of the series?	Hiccup	Astrid	Snotlout	Gobber	1	25	500
+Plot & Events	Which villain wants to capture all dragons?	Drago Grimmel	Snotlout	Hiccup	Stoick	1	30	600
+Places & Locations	What is the name of Hiccup’s village?	Berk	Valka’s Cove	Drago’s Lair	Dragon Island	1	20	100
+Places & Locations	Where does Hiccup find Toothless the first time?	Forest	Mountain	Sea	Beach	3	20	200
+Places & Locations	Where do the dragons hide from humans?	Island	Caves	Skies	Hidden Forest	2	25	300
+Places & Locations	Which mountain is the dragon training area?	Mount Hiccup	Mount Stormy	Mount Doom	Mount Berk	2	25	400
+Places & Locations	Where does the Red Death live?	Dragon Island	Valka’s Lair	Berk	Sea Cave	1	25	500
+Places & Locations	Where does Hiccup meet the Light Fury?	Island	Berk	Cave	Forest	1	30	600
+Objects & Items	What is Hiccup’s dragon helmet made from?	Metal	Dragon scales	Leather	Bone	2	20	100
+Objects & Items	What weapon does Stoick use?	Axe	Sword	Hammer	Spear	1	20	200
+Objects & Items	Which item helps Hiccup fly with Toothless?	Dragon saddle	Wing harness	Flying gear	Glider	3	25	300
+Objects & Items	What does Gobber forge for Hiccup?	Dragon armor	Hiccup’s prosthetic leg	Dragon net	Sword	2	25	400
+Objects & Items	Which tool is used to communicate with dragons?	Dragon whistle	Dragon horn	Dragon call	Dragon flute	1	25	500
+Objects & Items	What is Toothless’ favorite snack?	Fish	Meat	Cheese	Apples	1	30	600
+

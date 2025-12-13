@@ -1,0 +1,32 @@
+subtype	question	option1	option2	option3	option4	correct	time	square_text
+Jokes & Riddles	Why did the scarecrow win an award?	Because he was outstanding in his field	He studied hard	He scared everyone	He ran fastest	1	20	100
+Jokes & Riddles	Why don’t skeletons fight each other?	They are lazy	They forget how	They don't have the guts	They melt	3	20	200
+Jokes & Riddles	Why did the bicycle fall over?	It was pushed	It was tired	It was two-tired	It was broken	3	25	300
+Jokes & Riddles	Why can’t you trust stairs?	They squeak	They lie	They are always up to something	They move	3	25	400
+Jokes & Riddles	Why was the math book sad?	Too much subtraction	It lost a page	It had too many problems	It didn’t like numbers	3	25	500
+Jokes & Riddles	Why did the golfer bring two pants?	In case he sweats	In case he rips them	In case he gets bored	In case he gets a hole in one	4	30	600
+Animal Humor	Why don’t cows have money?	They are broke	Money is grass	Because farmers take it	Because they are milked dry	4	20	100
+Animal Humor	What do you call a pig that does karate?	Pork chop	Bacon master	Karate hog	Fight boar	1	20	200
+Animal Humor	Why did the dog sit in the shade?	He was hot	He wanted to hide	He didn’t like sun	He didn’t want to be a hot dog	4	25	300
+Animal Humor	What do you call a sleeping bull?	Bull-dozer	Bull sleeper	Snoring cow	Heavy moo	1	25	400
+Animal Humor	Why do seagulls fly over the sea?	They like waves	They hate land	Because if they flew over the bay, they'd be bagels	3	25	500
+Animal Humor	Why don't fish do homework?	They forget	They swim too much	They work undersea	Because they are always in schools	4	30	600
+Food Fun	Why did the cookie go to the doctor?	It was sick	It was broken	It felt crumby	It melted	3	20	100
+Food Fun	What kind of room has no doors?	Mushroom	Bedroom	Bathroom	Showroom	1	20	200
+Food Fun	Why shouldn’t you tell secrets on a farm?	Animals repeat	A cow might moo it out	Too noisy	The potatoes have eyes and the corn has ears	4	25	300
+Food Fun	What do you call cheese that isn't yours?	Stolen cheese	Cheddar	Cheesy yours	Nacho cheese	4	25	400
+Food Fun	Why did the orange stop?	It ran out of juice	It was peeled	It got squished	Someone ate it	1	25	500
+Food Fun	Why was the tomato blushing?	It was embarrassed	It saw the salad dressing	Someone squeezed it	It fell	2	30	600
+Silly Logic	What has many teeth but cannot bite?	Saw	Shark	Comb	Lion	3	20	100
+Silly Logic	What gets wetter the more it dries?	Water	Soap	Towel	Cloud	3	20	200
+Silly Logic	What has a neck but no head?	Bottle	River	Shirt	Giraffe statue	1	25	300
+Silly Logic	What has a bottom at the top?	Tree	Leg	Stairs	Hat	2	25	400
+Silly Logic	What runs but never walks?	Horse	River	Baby	Snake	2	25	500
+Silly Logic	What comes once in a minute, twice in a moment, but never in a thousand years?	Letter M	Time	Sound	Air	1	30	600
+Daily Life Humor	Why did the computer go to the dentist?	It had Bluetooth	It crashed	Too many cookies	It needed an upgrade	1	20	100
+Daily Life Humor	Why was the broom late?	It overswept	It broke	It was dusty	It forgot time	1	20	200
+Daily Life Humor	Why did the student eat his homework?	It was tasty	His teacher said it was a piece of cake	He was hungry	He made a bet	2	25	300
+Daily Life Humor	Why did the phone get glasses?	It couldn't focus	It cracked	It was old	It glitched	1	25	400
+Daily Life Humor	Why was the belt arrested?	For holding up a pair of pants	It was illegal	Someone lost it	It hit someone	1	25	500
+Daily Life Humor	Why did the lamp fail the test?	It wasn't bright	It flickered	It fell asleep	It broke	1	30	600
+

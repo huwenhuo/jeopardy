@@ -1,0 +1,31 @@
+subtype	question	option1	option2	option3	option4	correct	time	square_text
+K-POP	This seven-member group's fandom is known by the acronym ARMY.	SEVENTEEN	EXO	BTS	TXT	3	30	100
+K-POP	The song "Cheer Up" with its iconic 'Shy Shy Shy' line is a signature hit for this group.	Momoland	GFRIEND	TWICE	Aespa	3	30	200
+K-POP	What is the real name of the rapper known as Agust D, who is also a member of BTS?	J-Hope	Jin	Suga	RM	3	30	300
+K-POP	In 2020, this four-member girl group released the documentary Light Up The Sky on Netflix.	Red Velvet	TWICE	MAMAMOO	BLACKPINK	4	30	400
+K-POP	This company manages acts like JYP, Stray Kids, and ITZY.	SM Entertainment	YG Entertainment	HYBE Corporation	JYP Entertainment	4	30	500
+MOVIES	This 2023 film won an Oscar for Best Original Song with "What Was I Made For?"	Oppenheimer	Past Lives	Poor Things	Barbie	4	30	100
+MOVIES	In The Matrix, Neo is famously offered a choice between this color pill and a blue one.	Yellow	Black	Green	Red	4	30	200
+MOVIES	This director is known for his distinct visual style in films like The Grand Budapest Hotel and Moonrise Kingdom.	Wes Craven	Wes Anderson	Spike Lee	Christopher Nolan	2	30	300
+MOVIES	The phrase "Here's Johnny!" is famously screamed by Jack Nicholson in this 1980 psychological horror film.	Psycho	Poltergeist	The Shining	The Exorcist	3	30	400
+MOVIES	This Marvel character's secret identity is T'Challa, the King of Wakanda.	Falcon	War Machine	Black Panther	Doctor Strange	3	30	500
+TV SHOWS	The main characters of this show famously gathered at the coffee shop Central Perk.	Seinfeld	How I Met Your Mother	Friends	Frasier	3	30	100
+TV SHOWS	This mockumentary-style comedy is set in the fictional parks department of Pawnee, Indiana.	The Office	30 Rock	Parks and Recreation	Veep	3	30	200
+TV SHOWS	The phrase "GTL" (Gym, Tan, Laundry) was a popular motto on this early 2010s reality show.	The Bachelor	Keeping Up with the Kardashians	Jersey Shore	The Real World	3	30	300
+TV SHOWS	She played the main character, Hannah Montana, before having a major pop career.	Selena Gomez	Demi Lovato	Miley Cyrus	Ariana Grande	3	30	400
+TV SHOWS	This popular fantasy series features the house sigils of Stark, Lannister, and Targaryen.	The Witcher	Game of Thrones	The Rings of Power	Outlander	2	30	500
+MUSIC	What is the real name of the rapper known as Eminem?	Shawn Carter	Jeffery Williams	Marshall Mathers	Curtis Jackson	3	30	100
+MUSIC	This artist's 2023-2024 tour, The Eras Tour, became the highest-grossing concert tour of all time.	Beyoncé	Madonna	Taylor Swift	Adele	3	30	200
+MUSIC	"Bohemian Rhapsody" and "We Will Rock You" are hits from this iconic British rock band.	Led Zeppelin	The Beatles	Queen	Pink Floyd	3	30	300
+MUSIC	This American pop star famously kissed Britney Spears and Madonna at the 2003 MTV Video Music Awards.	Christina Aguilera	Madonna	Lady Gaga	Katy Perry	2	30	400
+MUSIC	What is the name of Beyoncé's alter ego, a fierce stage personality, which was also a 2008 album title?	Sasha Fierce	Queen B	Yoncé	J-Slay	1	30	500
+SOCIAL MEDIA	This short-form video platform popularized trends like the "Renegade" dance and sea shanties.	Instagram	YouTube Shorts	TikTok	Vine	3	30	100
+SOCIAL MEDIA	The platform formerly known as Twitter officially rebranded to this single letter in 2023.	Z	T	X	W	3	30	200
+SOCIAL MEDIA	What is the name of the livestreaming platform mainly focused on video game content?	YouTube Gaming	Twitch	Mixer	Discord	2	30	300
+SOCIAL MEDIA	This social media giant purchased the photo-sharing app Instagram in 2012 for $1 billion.	Microsoft	Apple	Meta Platforms (Facebook)	Google	3	30	400
+SOCIAL MEDIA	Who was the first person to reach 100 million followers on Instagram in 2016?	Kim Kardashian	Selena Gomez	Ariana Grande	Beyoncé	2	30	500
+CELEBRITIES	This actor played both the titular character in Deadpool and the Green Lantern.	Chris Evans	Ryan Reynolds	Hugh Jackman	Bradley Cooper	2	30	100
+CELEBRITIES	The celebrity couple famously dubbed "Bennifer" consists of Jennifer Lopez and this actor.	Ben Stiller	Ben Kingsley	Ben Affleck	Ben Whishaw	3	30	200
+CELEBRITIES	This celebrity chef is known for his explosive catchphrase, "BAM!"	Gordon Ramsay	Bobby Flay	Emeril Lagasse	Wolfgang Puck	3	30	300
+CELEBRITIES	She is the youngest person to win an Oscar for acting, doing so at age 10 for Paper Moon.	Jodie Foster	Tatum O'Neal	Anna Paquin	Emma Stone	2	30	400
+CELEBRITIES	This actor played James Bond seven times, starting with Dr. No in 1962.	Roger Moore	Pierce Brosnan	Daniel Craig	Sean Connery	4	30	500
