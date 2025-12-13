@@ -10,13 +10,13 @@ Logic & Puzzles	If all Bloops are Razzies and all Razzies are Lazzies, are all B
 Logic & Puzzles	A farmer has 17 sheep, and all but 9 die. How many are left alive?	8	9	17	0	2	25	300
 Logic & Puzzles	There are three boxes: one contains apples, one oranges, one both. All labels are wrong. How to correctly label by picking one fruit?	Pick from box labeled both	Pick from box labeled apples	Pick from box labeled oranges	Pick any	1	25	400
 Logic & Puzzles	If you flip a coin three times, what’s the chance of getting all heads?	1/2	1/4	1/6	1/8	4	25	500
-Logic & Puzzles	Which number comes next: 2, 6, 12, 20, 30, ?	40	42	36	50	1	30	600
+Logic & Puzzles	Which number comes next: 2, 6, 12, 20, 30, ?	40	42	36	50	2	30	600
 Math & Numbers	What is 15 × 6?	90	80	95	85	1	20	100
 Math & Numbers	If you divide 120 by half and add 10, what is the result?	130	240	250	220	3	20	200
 Math & Numbers	What is the next prime number after 31?	33	37	39	41	2	25	300
 Math & Numbers	The sum of angles in a triangle is?	90°	180°	360°	270°	2	25	400
 Math & Numbers	A rectangle has length 8 and width 3. Area?	11	24	22	32	2	25	500
-Math & Numbers	If x + 3 = 10, what is 2x?	10	12	14	16	4	30	600
+Math & Numbers	If x + 3 = 10, what is 2x?	10	12	14	16	3	30	600
 Word Play	What word becomes shorter when you add 2 letters?	Small	Short	Tiny	Shorter	4	20	100
 Word Play	Which is a synonym for “happy”?	Sad	Joyful	Angry	Tired	2	20	200
 Word Play	Unscramble: “LEPAP”	APPLE	PEAR	GRAPE	PLANE	1	25	300

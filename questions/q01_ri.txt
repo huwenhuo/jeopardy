@@ -1,0 +1,31 @@
+subtype	question	option1	option2	option3	option4	correct	time	square_text
+History	What was Roosevelt Island formerly called?	Liberty Island	Welfare Island	Blackwell Island	East Island	2	20	100
+History	Which famous prison was on Roosevelt Island?	Sing Sing	Blackwell’s Island Prison	Rikers Island	Alcatraz	2	20	200
+History	In what century was the Smallpox Hospital built?	18th	19th	20th	21st	2	25	300
+History	When was the island officially renamed Roosevelt Island?	1960	1973	1980	1990	2	25	400
+History	Which President is the island named after?	Theodore Roosevelt	Franklin D. Roosevelt	Eleanor Roosevelt	James Roosevelt	2	25	500
+History	What was one of the island’s earliest uses?	Lighthouse	Prison & Hospital	Airport	Military Base	2	30	600
+Landmarks	What is the Octagon on Roosevelt Island?	Historic church	Residential building	Shopping center	Museum	2	20	100
+Landmarks	What famous ruins are on the north end?	Smallpox Hospital	Lighthouse	Chapel	Observatory	1	20	200
+Landmarks	Which park is dedicated to FDR’s Four Freedoms?	Southpoint Park	Lighthouse Park	Franklin D. Roosevelt Four Freedoms Park	East River Park	3	25	300
+Landmarks	What is unique about the Four Freedoms Park design?	Spiral shape	Triangular layout	Circular design	Rectangular blocks	2	25	400
+Landmarks	Where is the Roosevelt Island Lighthouse located?	North tip	South tip	Center	East side	2	25	500
+Landmarks	Which building houses NYU Langone facilities?	Octagon	Coler Hospital	Goldwater Memorial	Northpoint Tower	3	30	600
+Transport	What connects Roosevelt Island to Manhattan by air?	Ferry	Bridge	Tramway	Tunnel	3	15	100
+Transport	How long does the Roosevelt Island Tramway take?	3 minutes	4 minutes	5 minutes	6 minutes	3	15	200
+Transport	Which subway line stops at Roosevelt Island?	F Train	Q Train	N Train	7 Train	1	20	300
+Transport	Is there a ferry service to Roosevelt Island?	Yes	No	Only weekends	Only holidays	1	20	400
+Transport	What body of water separates Roosevelt Island from Manhattan?	East River	Hudson River	Harlem River	Long Island Sound	1	25	500
+Transport	What was the first mode of public transport on the island?	Tram	Ferry	Horse-drawn carriages	Subway	3	30	600
+Parks & Recreation	Which park offers the best Manhattan skyline view?	Southpoint Park	Lighthouse Park	Four Freedoms Park	Island Center Park	3	15	100
+Parks & Recreation	Which park is located at the south tip?	Southpoint Park	Lighthouse Park	Four Freedoms Park	Island Center Park	1	15	200
+Parks & Recreation	Where can you rent bikes on Roosevelt Island?	Octagon	Tram Station	Southpoint Park	Northpoint Tower	2	20	300
+Parks & Recreation	Which area is popular for jogging?	Eastern promenade	Tram plaza	Lighthouse Park	Smallpox Hospital	1	20	400
+Parks & Recreation	What is the nickname for the island’s promenade?	Riverwalk	Boardwalk	Island Path	East Trail	1	25	500
+Parks & Recreation	Which park has a playground for children?	Southpoint Park	Lighthouse Park	Four Freedoms Park	Octagon Garden	1	30	600
+Fun Facts	Which famous TV series filmed on Roosevelt Island?	Friends	The Blacklist	Law & Order	Gotham	2	15	100
+Fun Facts	What annual event occurs on Roosevelt Island?	Island Festival	Tramway Anniversary	Cherry Blossom Festival	Art Fair	2	15	200
+Fun Facts	Which building is famous for its octagonal shape?	Lighthouse	Octagon	Goldwater	Coler	2	20	300
+Fun Facts	How long is Roosevelt Island from north to south?	1 mile	2 miles	3 miles	4 miles	2	20	400
+Fun Facts	Which subway exit leads directly to Tram Plaza?	Exit 1	Exit 2	Exit 3	Exit 4	3	25	500
+Fun Facts	What is the official zip code of Roosevelt Island?	10044	10021	10036	10003	1	30	600

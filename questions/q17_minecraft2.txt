@@ -1,0 +1,21 @@
+subtype	question	option1	option2	option3	option4	correct	time	square_text
+Minecraft Basics	What material do you need to mine obsidian?	Wood	Stone	Iron	Diamond Pickaxe	4	20	100
+Minecraft Basics	Which mob explodes when near the player?	Zombie	Creeper	Spider	Enderman	2	20	200
+Minecraft Basics	Which tool is used to collect wool from sheep?	Shears	Axe	Pickaxe	Shovel	1	25	300
+Minecraft Basics	Which dimension is home to the Ender Dragon?	Nether	End	The Overworld	The End City	2	25	400
+Minecraft Basics	Which food restores the most hunger points?	Bread	Cooked Beef	Potato	Cake	2	25	500
+Minecraft Basics	What is the maximum stack size for most items?	16	32	64	128	3	30	600
+Redstone & Mechanisms	Which block emits a redstone signal when powered?	Stone	Redstone Lamp	Torch	Sand	2	20	100
+Redstone & Mechanisms	Which item is used to detect mobs or players?	Pressure Plate	Lever	Button	Tripwire Hook	1	20	200
+Redstone & Mechanisms	Which block can teleport entities in the game?	Portal Frame	Obsidian	End Portal	Nether Portal	4	25	300
+Redstone & Mechanisms	Which redstone component inverts a signal?	Repeater	Comparator	Redstone Torch	Piston	3	25	400
+Minecraft Mobs	Which mob drops string when killed?	Cow	Spider	Creeper	Skeleton	2	20	100
+Minecraft Mobs	Which mob is neutral unless provoked and drops pork?	Cow	Pig	Sheep	Wolf	2	20	200
+Minecraft Mobs	Which hostile mob shoots fireballs?	Zombie Blaze Enderman Skeleton	2	25	300
+Minecraft Mobs	Which boss mob drops the Nether Star?	Ender Dragon	Warden	Wither	Creeper	3	25	400
+Minecraft Mobs	Which mob only spawns at night and burns in sunlight?	Spider	Enderman	Zombie Pigman	Skeleton	4	30	500
+Minecraft Crafting	What do you need to craft a bucket?	Iron Stick	Iron Ingots	Wooden Planks	Stone	2	20	100
+Minecraft Crafting	Which block is required to craft a furnace?	Stone	Cobblestone	Bricks	Iron	2	20	200
+Minecraft Crafting	Which item allows you to brew potions?	Brewing Stand	Enchanting Table	Cauldron	Anvil	1	25	300
+Minecraft Crafting	Which item can you craft to enchant tools?	Enchanted Book	Book	Lapis Lazuli	Diamond	1	25	400
+Minecraft Crafting	Which block is used to respawn the Ender Dragon?	End Portal Frame	Respawn Anchor	Bed	Obsidian	2	30	500

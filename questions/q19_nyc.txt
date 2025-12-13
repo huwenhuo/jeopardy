@@ -1,0 +1,29 @@
+subtype	question	option1	option2	option3	option4	correct	time	square_text
+NYC History	When was New Amsterdam renamed New York?	1650	1664	1701	1725	2	20	100
+NYC History	Which European nation first settled Manhattan?	Spain	England	Netherlands	France	3	20	200
+NYC History	Who famously purchased Manhattan from the Lenape?	Peter Minuit	Henry Hudson	Peter Stuyvesant	Willem Kieft	1	25	300
+NYC History	What major event happened in NYC in 1835?	Great Fire of New York	Opening of Central Park	Brooklyn Bridge built	Ellis Island opened	1	25	400
+NYC History	When did the NYC subway system open?	1890	1904	1918	1925	2	25	500
+NYC History	What year was the Empire State Building completed?	1918	1929	1931	1940	3	30	600
+NYC History	Which borough joined the city last (1898 consolidation)?	Bronx	Brooklyn	Queens	Staten Island	4	30	700
+NYC Geography & Landmarks	Which river is on Manhattan’s east side?	Hudson River	East River	Harlem River	Bronx River	2	20	100
+NYC Geography & Landmarks	Which borough is the largest by land area?	Manhattan	Queens	Brooklyn	Staten Island	4	20	200
+NYC Geography & Landmarks	Which bridge was the first to span the East River?	Manhattan Bridge	Williamsburg Bridge	Queensboro Bridge	Brooklyn Bridge	4	25	300
+NYC Geography & Landmarks	What is the tallest building in NYC today?	Empire State Building	Chrysler Building	One World Trade Center	30 Hudson Yards	3	25	400
+NYC Geography & Landmarks	Which park is the largest?	Central Park	Prospect Park	Flushing Meadows Park	Pelham Bay Park	4	25	500
+NYC Geography & Landmarks	Where is the United Nations located?	Upper East Side	Midtown East	Lower Manhattan	Chelsea	2	30	600
+NYC Geography & Landmarks	Which airport is located in Queens?	Newark	LaGuardia	JFK	Teterboro	3	30	700
+NYC Culture & Daily Life	Which neighborhood is known for its theaters?	Wall Street	Times Square/Broadway	Upper West Side	Tribeca	2	20	100
+NYC Culture & Daily Life	Which food is NYC especially famous for?	Deep-dish pizza	Cheesesteak	Bagels	Barbecue	3	20	200
+NYC Culture & Daily Life	Which baseball team plays in the Bronx?	Mets	Yankees	Dodgers	Giants	2	25	300
+NYC Culture & Daily Life	Which neighborhood is known for luxury shopping?	Hell’s Kitchen	Chinatown	SoHo	Upper West Side	3	25	400
+NYC Culture & Daily Life	Which famous parade happens on Thanksgiving?	Halloween Parade	Puerto Rican Day Parade	St. Patrick’s Parade	Macy’s Parade	4	25	500
+NYC Culture & Daily Life	Which station is known for its celestial ceiling?	Penn Station	Atlantic Terminal	Grand Central Terminal	Fulton Center	3	30	600
+NYC Culture & Daily Life	Which line famously stops at Times Square?	L	7	D	G	2	30	700
+NYU & Education	NYU is primarily located in which neighborhood?	Chelsea	Greenwich Village	SoHo	Upper East Side	2	20	100
+NYU & Education	When was NYU founded?	1760	1831	1880	1901	2	20	200
+NYU & Education	Which NYU school is known for film and arts?	Stern	Gallatin	Tisch	Silver	3	25	300
+NYU & Education	Washington Square Park’s arch honors which president?	Washington	Jefferson	Lincoln	Adams	1	25	400
+NYU & Education	Which color is associated with NYU?	Green	Purple	Blue	Red	2	25	500
+NYU & Education	NYU has a major campus abroad in which city?	Tokyo	London	Paris	Abu Dhabi	4	30	600
+NYU & Education	NYU is known for being what kind of university?	Ivy League	State university	Private research university	Military academy	3	30	700
