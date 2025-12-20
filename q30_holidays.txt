@@ -1,0 +1,31 @@
+subtype	question	option1	option2	option3	option4	correct	time	square_text
+Food & Drink	This spicy ginger-flavored cookie is often shaped like a man and decorated with icing.	Snickerdoodle	Shortbread	Gingerbread	Biscotti	3	30	100
+Food & Drink	Eggnog is a traditional holiday drink, but what is its primary dairy ingredient?	Heavy Cream	Milk	Sour Cream	Yogurt	2	30	200
+Food & Drink	This "bird" is the center of approximately 88% of American Thanksgiving dinners.	Ham	Duck	Turkey	Goose	3	30	300
+Food & Drink	In Italy, this tall, dome-shaped sweet bread is a staple of Christmas and New Year's.	Panettone	Ciabatta	Focaccia	Pandoro	1	30	400
+Food & Drink	During the Moon Festival, people in China eat these round cakes with sweet fillings.	Sun Cakes	Mooncakes	Rice Cakes	Taro Cakes	2	30	500
+Food & Drink	On the Jewish holiday of Purim, these triangular filled pastries are eaten.	Rugelach	Hamantaschen	Challah	Matzah	2	30	600
+Global Traditions	In India, people throw colored powder and water at each other to celebrate this spring festival.	Diwali	Holi	Onam	Pongal	2	30	100
+Global Traditions	This Japanese tradition involves eating KFC (Fried Chicken) as a main Christmas meal.	Kurisumasu	Shogatsu	Setsubun	Obon	1	30	200
+Global Traditions	This 9-day Mexican celebration reenacts Mary and Joseph's search for shelter.	Las Posadas	Carnaval	Grito de Dolores	Cinco de Mayo	1	30	300
+Global Traditions	During Ramadan, this term refers to the meal eaten by Muslims after sunset.	Suhoor	Iftar	Eid	Zakat	2	30	400
+Global Traditions	In Sweden, the eldest daughter wears a crown of candles to celebrate this Dec 13th holiday.	St. Lucia Day	Midsommar	Yule	Walpurgis	1	30	500
+Global Traditions	In some European countries, this "Christmas Devil" punishes children who were naughty.	Belsnickel	Krampus	Zwarte Piet	Perchta	2	30	600
+History & Heritage	On June 14th, Americans celebrate this holiday to honor the adoption of the national ensign.	Constitution Day	Flag Day	Independence Day	Anthem Day	2	30	100
+History & Heritage	This holiday marks the 1918 armistice ending the fighting in World War I.	Memorial Day	Veterans Day	V-E Day	V-J Day	2	30	200
+History & Heritage	This federal holiday honors the "Father of our Country" and was originally on Feb 22nd.	Lincoln's Day	Washington's Birthday	Patriot Day	Flag Day	2	30	300
+History & Heritage	This holiday celebrates the landing of the Pilgrims at Plymouth Rock in 1620.	Forefathers' Day	Arrival Day	Pioneer Day	Founders Day	1	30	400
+History & Heritage	Guy Fawkes Night in the UK commemorates the failure of the "Plot" involving this substance.	Poison	Gunpowder	Arson	Treason	2	30	500
+History & Heritage	This holiday on the second Monday in October has increasingly been celebrated as Indigenous Peoples' Day.	Columbus Day	Labor Day	Discovery Day	Heritage Day	1	30	600
+Folklore & Figures	According to the song, this reindeer was excluded from all the reindeer games.	Comet	Cupid	Rudolph	Blitzen	3	30	100
+Folklore & Figures	This jolly figure’s modern red-and-white look was popularized by Coca-Cola ads in the 1930s.	Father Time	Santa Claus	Jack Frost	Kris Kringle	2	30	200
+Folklore & Figures	On St. Patrick's Day, you might find this three-leafed plant used by the Saint to explain the Trinity.	Four-leaf Clover	Shamrock	Fern	Ivy	2	30	300
+Folklore & Figures	This winged infant is often depicted shooting arrows of love on February 14th.	Cherub	Cupid	Eros	Angel	2	30	400
+Folklore & Figures	In the "Nutcracker" ballet, this character is the king of the mice's enemy.	Toy Soldier	Nutcracker	Rat King	Sugar Plum Fairy	2	30	500
+Folklore & Figures	This spooky figure is the "Ghost of Christmas Yet to Come" in A Christmas Carol.	Marley	Scrooge	The Phantom	The Spirit	3	30	600
+The Calendar	This "Eve" is the biggest night for parties and watching the clock strike midnight.	Christmas Eve	New Year's Eve	All Hallows' Eve	Mischief Night	2	30	100
+The Calendar	This French term for "Fat Tuesday" is the day before Ash Wednesday.	Mardi Gras	C'est la Vie	Bon Voyage	Joie de Vivre	1	30	200
+The Calendar	This refers to the four-week period of preparation and waiting before Christmas.	Lent	Advent	Epiphany	Pentecost	2	30	300
+The Calendar	This day is often called "The First Day of Spring" in the Northern Hemisphere.	Summer Solstice	Vernal Equinox	Winter Solstice	Autumnal Equinox	2	30	400
+The Calendar	This holiday is celebrated on the 11th hour of the 11th day of the 11th month.	Remembrance Day	Thanksgiving	Christmas	Halloween	1	30	500
+The Calendar	This occurs every 4 years in February to keep our calendar in alignment with Earth's orbit.	Leap Day	Solstice	Equinox	Lunar Cycle	1	30	600

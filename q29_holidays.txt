@@ -1,0 +1,31 @@
+subtype	question	option1	option2	option3	option4	correct	time	square_text
+Christmas Lore	This reindeer's name means "Thunder" in German.	Donner	Blitzen	Dancer	Dasher	1	30	100
+Christmas Lore	In the song "The Twelve Days of Christmas," this is given on the tenth day.	Lords a-Leaping	Ladies Dancing	Maids a-Milking	Pipers Piping	1	30	200
+Christmas Lore	This 19th-century poem originally titled "A Visit from St. Nicholas" defined the modern Santa.	The Night Before Christmas	The Christmas Carol	The Winter King	The Polar Express	1	30	300
+Christmas Lore	In Slavic folklore, this "Snow Maiden" is the granddaughter and helper of Grandfather Frost.	Snegurochka	Baba Yaga	Marzanna	Vasilisa	1	30	400
+Christmas Lore	According to the Gospel of Luke, this is the town where Jesus was born.	Jerusalem	Nazareth	Bethlehem	Jericho	3	30	500
+Christmas Lore	The character "The Grinch" first appeared in a book by this author in 1957.	Roald Dahl	Dr. Seuss	Maurice Sendak	Beatrix Potter	2	30	600
+New Year Traditions	In the US, this fruit-themed object "drops" in Times Square at the stroke of midnight.	Apple	Crystal Ball	Peach	Gold Coin	2	30	100
+New Year Traditions	In Spain, it is tradition to eat twelve of these at midnight for good luck.	Grapes	Olives	Cherries	Almonds	1	30	200
+New Year Traditions	This song, written by Robert Burns, is traditionally sung at midnight to say goodbye to the old year.	Auld Lang Syne	First Noel	Danny Boy	Amazing Grace	1	30	300
+New Year Traditions	This country is always the first major nation to ring in the New Year.	Australia	New Zealand	Japan	Samoa	2	30	400
+New Year Traditions	In many Southern US states, eating these beans on New Year's Day is thought to bring prosperity.	Black-eyed Peas	Lima Beans	Lentils	Kidney Beans	1	30	500
+New Year Traditions	The Chinese New Year is also commonly known by this seasonal name.	Spring Festival	Winter Harvest	Lantern Feast	Dragon Day	1	30	600
+Holiday Media	In the movie "Home Alone," the McCallister family travels to this city, leaving Kevin behind.	London	Paris	New York	Miami	2	30	100
+Holiday Media	This 1988 action movie starring Bruce Willis is frequently debated as being a "Christmas Movie."	Die Hard	Lethal Weapon	Predator	Rambo	1	30	200
+Holiday Media	In "A Charlie Brown Christmas," what color is the ornament that causes the tiny tree to lean over?	Red	Blue	Gold	Green	1	30	300
+Holiday Media	This actor played the title role in the 1994 film "The Santa Clause."	Tim Allen	Tom Hanks	Jim Carrey	Robin Williams	1	30	400
+Holiday Media	"The Polar Express" movie is based on a book where children travel to the North Pole on this.	A Train	A Sleigh	A Bus	An Airplane	1	30	500
+Holiday Media	In the movie "Elf," what is Buddy the Elf's favorite condiment to put on spaghetti?	Maple Syrup	Chocolate Sauce	Ketchup	Honey	1	30	600
+World Christmas	In many Latin American cultures, this is the main celebration held on Christmas Eve.	Nochebuena	Fiesta	Posada	Navidad	1	30	100
+World Christmas	In Greece, children often go door-to-door singing these traditional Christmas carols.	Kalanda	Hymns	Odes	Canticles	1	30	200
+World Christmas	In Ethiopia, Christmas is celebrated on January 7th and is known by this name.	Ganna	Genna	Enkutatash	Timkat	1	30	300
+World Christmas	This country is credited with starting the Christmas Tree tradition in the 16th century.	Germany	Norway	England	France	1	30	400
+World Christmas	In Iceland, thirteen of these "Julemen" or trolls visit children during the holidays.	Yule Lads	Tomte	Nisse	Elves	1	30	500
+World Christmas	In the Philippines, these colorful star-shaped lanterns are a primary Christmas symbol.	Parol	Farol	Stella	Luzon	1	30	600
+Holiday Sweets	These minty, hooked treats were supposedly created to keep children quiet during church services.	Candy Canes	Peppermint Drops	Rock Candy	Lollipops	1	30	100
+Holiday Sweets	This holiday cake is notorious for its long shelf life and is often joked about as being "indestructible."	Fruitcake	Sponge Cake	Pound Cake	Log Cake	1	30	200
+Holiday Sweets	A "Bûche de Noël" is a French cake traditionally shaped and decorated to look like this.	A Log	A Star	A Snowflake	A Chimney	1	30	300
+Holiday Sweets	These German spiced cookies, similar to gingerbread, are a Christmas market staple.	Lebkuchen	Shortbread	Macarons	Pizzelle	1	30	400
+Holiday Sweets	In England, it is traditional to hide one of these inside a Christmas pudding for luck.	A Coin	A Ring	A Thimble	A Key	1	30	500
+Holiday Sweets	This "king" of holiday nut-based confections is made from honey, sugar, and egg whites.	Nougat	Fudge	Taffy	Marzipan	1	30	600

@@ -1,0 +1,31 @@
+subtype	question	option1	option2	option3	option4	correct	time	square_text
+2025 Breakthroughs	Research in 2025 suggests that GLP-1 agonists (weight loss drugs) may significantly reduce the demand for which surgery?	ACL Repair	Total Knee Arthroplasty	Carpal Tunnel Release	Spine Fusion	2	30	100
+2025 Breakthroughs	The "POvIV" trial has changed infection management by proving which antibiotic route is non-inferior for bone infections?	Topical	Oral	Intramuscular	Subcutaneous	2	30	200
+2025 Breakthroughs	In 2025, which drug is being widely studied for its potential to prevent "Post-Traumatic Osteoarthritis" after joint injury?	Aspirin	Tranexamic Acid (TXA)	Warfarin	Metformin	2	30	300
+2025 Breakthroughs	A 2024-2025 "New England Journal of Medicine" study found that for Degenerative Meniscus Tears, which treatment was as effective as surgery?	Opioids	Physical Therapy	Bed Rest	Steroid Injections	2	30	400
+2025 Breakthroughs	Recent 2025 large-scale data identified which surprising patient factor as a primary predictor of Carpal Tunnel symptom severity?	Height	Educational Attainment	Dietary Fiber	Sleep Position	2	30	500
+2025 Breakthroughs	In 2025, researchers are refining "Bio-Glass" for what purpose in orthopedic trauma?	Nerve conduits	Bone void filling	Suture coating	Skin grafting	2	30	600
+Bio-Materials & Tech	Which bio-resorbable metal is currently the focus of "dissolvable" implant research in 2025?	Titanium	Magnesium	Stainless Steel	Gold	2	30	100
+Bio-Materials & Tech	The first FDA-cleared "Smart" tibial tray transmits which specific data point to surgeons post-op?	Blood Sugar	Patient Kinematics/Steps	Joint Temperature	Bone Density	2	30	200
+Bio-Materials & Tech	What is the primary mechanical benefit of 3D-printed "Trabecular" titanium in acetabular cups?	Lighter weight	Lower Young’s Modulus	Easier sterilization	Lower cost	2	30	300
+Bio-Materials & Tech	Augmented Reality (AR) headsets in 2025 have shown the most clinical promise in which specific spinal procedure?	Microdiscectomy	Pedicle Screw Placement	Dural Repair	Scoliosis Bracing	2	30	400
+Bio-Materials & Tech	Which material is being developed in 2025 to create "Hierarchical Scaffolds" that mimic natural cortical bone?	Carbon Fiber	Nanocomposite Polymers	Teflon	Liquid Silk	2	30	500
+Bio-Materials & Tech	New "Antimicrobial Nano-pillars" on implants kill bacteria through which mechanism?	Chemical Release	Physical Piercing	Heat Generation	Dehydration	2	30	600
+Bone Physiology	According to Wolff’s Law, bone remodeling occurs specifically in response to what?	Vitamin Intake	Mechanical Loading	Patient Age	Circadian Rhythm	2	30	100
+Bone Physiology	Which type of collagen makes up approximately 90% of the organic matrix of bone?	Type I	Type II	Type III	Type X	1	30	200
+Bone Physiology	What is the medical term for the formation of lamellar bone in non-osseous soft tissues?	Osteonecrosis	Heterotopic Ossification	Osteomyelitis	Osteomalacia	2	30	300
+Bone Physiology	Which cell type is responsible for the secretion of the RANK-ligand (RANKL) to regulate bone resorption?	Osteocyte	Osteoblast	Osteoclast	Chondrocyte	2	30	400
+Bone Physiology	In the stages of fracture healing, when does the "Hard Callus" typically begin to form?	1-2 days	3-4 weeks	6-8 months	1 year	2	30	500
+Bone Physiology	What is the name of the law stating that epiphyses are under pressure and growth occurs at right angles to that pressure?	Wolff’s Law	Heuter-Volkmann Law	Newton’s Law	Davis’s Law	2	30	600
+Clinical Examination	A positive "Lachman Test" with no firm endpoint is most sensitive for a tear in which structure?	MCL	PCL	ACL	Meniscus	3	30	100
+Clinical Examination	The "Thompson Test" is used by surgeons to assess the integrity of which tendon?	Patellar Tendon	Achilles Tendon	Biceps Tendon	Rotator Cuff	2	30	200
+Clinical Examination	"Finkelstein’s Test" is the classic diagnostic maneuver for which condition of the wrist?	Carpal Tunnel	De Quervain’s Tenosynovitis	Scaphoid Fracture	TFCC Tear	2	30	300
+Clinical Examination	The "Hawkins-Kennedy" test is primarily used to identify what pathology?	Hip Labral Tear	Shoulder Impingement	Ankle Sprain	Disc Herniation	2	30	400
+Clinical Examination	In a "Trendelenburg Test," a drop in the pelvis on the unsupported side indicates weakness in which muscle?	Gluteus Maximus	Gluteus Medius	Iliopsoas	Quadriceps	2	30	500
+Clinical Examination	The "Mulder Click" is a clinical sign used to diagnose which pathology of the foot?	Plantar Fasciitis	Morton’s Neuroma	Lisfranc Injury	Bunions	2	30	600
+Trauma & Surgical Hits	In the classification of open fractures, which system is most commonly used by surgeons worldwide?	Garden	Gustilo-Anderson	Weber	Schatzker	2	30	100
+Trauma & Surgical Hits	"Primary Bone Healing" (Direct) occurs only under which mechanical condition?	Relative Stability	Absolute Stability	Cast Splinting	Traction	2	30	200
+Trauma & Surgical Hits	The "AO Foundation," which standardized fracture fixation, was founded in which country?	USA	Germany	Switzerland	United Kingdom	3	30	300
+Trauma & Surgical Hits	Which anatomical structure is at greatest risk during a lateral approach to the distal humerus?	Median Nerve	Radial Nerve	Ulnar Nerve	Axillary Nerve	2	30	400
+Trauma & Surgical Hits	A "Schatzker Type IV" fracture refers to which part of the anatomy?	Distal Radius	Proximal Tibia	Femoral Neck	Humeral Head	2	30	500
+Trauma & Surgical Hits	The "Terrible Triad" of the elbow involves a dislocation, a coronoid fracture, and a fracture of what else?	Olecranon	Radial Head	Medial Epicondyle	Capitellum	2	30	600

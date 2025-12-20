@@ -1,0 +1,31 @@
+subtype	question	option1	option2	option3	option4	correct	time	square_text
+Holiday Traditions	Which country is known for the tradition of the "Yule Goat," a giant straw goat built in the city of Gävle?	Norway	Sweden	Finland	Denmark	2	30	100
+Holiday Traditions	In the song "The Twelve Days of Christmas," how many "Ladies Dancing" are there?	七	八	九	十	3	30	200
+Holiday Traditions	What is the name of the traditional German Christmas market that translates to "Christ Child Market"?	Christkindlesmarkt	Weihnachtsmarkt	Ostermarkt	Herbstmarkt	1	30	300
+Holiday Traditions	The "Feast of the Seven Fishes" is a Christmas Eve tradition in which culture?	Spanish	Italian	Portuguese	French	2	30	400
+Holiday Traditions	In which decade did the first Rockefeller Center Christmas tree lighting take place?	1920s	1930s	1940s	1950s	2	30	500
+Holiday Traditions	Which Victorian author wrote "The Cricket on the Hearth" as one of his five Christmas books?	Thomas Hardy	Charles Dickens	Lewis Carroll	Oscar Wilde	2	30	600
+Holiday Movies	In the 1946 film "It's a Wonderful Life," what happens every time a bell rings?	An angel gets wings	A child is born	A star is lit	Snow begins to fall	1	30	100
+Holiday Movies	Which actor played multiple roles, including the conductor and Santa, in the 2004 film "The Polar Express"?	Tom Hanks	Jim Carrey	Tim Allen	Billy Crystal	1	30	200
+Holiday Movies	In the movie "Elf," Buddy says the four main food groups for elves are candy, candy canes, candy corn, and what?	Syrup	Chocolate	Gingerbread	Fudge	1	30	300
+Holiday Movies	What is the name of the reindeer-in-training who is Rudolph's father in the 1964 TV special?	Dasher	Donner	Blitzen	Vixen	2	30	400
+Holiday Movies	Which 1990s holiday movie features a character named "Turbo-Man"?	Home Alone	Jingle All the Way	The Santa Clause	The Grinch	2	30	500
+Holiday Movies	In "Home Alone," what is the name of the specific pizza company that delivers to the McCallister house?	Little Nero's	Pizza Hut	Domino's	Papa John's	1	30	600
+Holiday History	Which U.S. President was the first to have a Christmas tree in the White House?	Franklin Pierce	Abraham Lincoln	Andrew Jackson	Ulysses S. Grant	1	30	100
+Holiday History	The poem "A Visit from St. Nicholas" was first published anonymously in a newspaper in which state?	New York	Massachusetts	Pennsylvania	Virginia	1	30	200
+Holiday History	What was the first year that the New Year's Eve ball dropped in Times Square?	1895	1907	1915	1924	2	30	300
+Holiday History	In 1644, which leader banned Christmas celebrations in England for being "sinful"?	King Charles I	Oliver Cromwell	Henry VIII	William of Orange	2	30	400
+Holiday History	Saint Nicholas, the inspiration for Santa Claus, was originally a bishop in which modern-day country?	Greece	Italy	Turkey	Netherlands	3	30	500
+Holiday History	Which explorer's fleet was famously wrecked on Christmas Day, 1492?	Vasco da Gama	Christopher Columbus	Ferdinand Magellan	John Cabot	2	30	600
+Holiday Music	"Silver Bells" was originally written for a movie called "The Lemon Drop Kid," starring which actor?	Bing Crosby	Bob Hope	Fred Astaire	Gene Kelly	2	30	100
+Holiday Music	Which famous Christmas song was the first ever played in space by Gemini 6 astronauts?	Jingle Bells	Silent Night	Joy to the World	Deck the Halls	1	30	200
+Holiday Music	What is the best-selling Christmas single of all time according to Guinness World Records?	White Christmas	All I Want for Christmas	Silent Night	Last Christmas	1	30	300
+Holiday Music	The melody for "What Child Is This?" is based on which traditional English folk song?	Scarborough Fair	Greensleeves	Early One Morning	The Water is Wide	2	30	400
+Holiday Music	In "Do They Know It's Christmas?" (1984), who sang the opening line?	Bono	Paul McCartney	Paul Young	Boy George	3	30	500
+Holiday Music	Which classical composer wrote the "Christmas Oratorio" first performed in 1734?	Vivaldi	Handel	Bach	Beethoven	3	30	600
+New Year's Facts	In the Jewish calendar, what is the name of the "New Year for Trees"?	Tu BiShvat	Sukkot	Purim	Shavuot	1	30	100
+New Year's Facts	The month of January is named after Janus, the Roman god of what?	Beginnings and endings	War and Peace	Harvest and Growth	Sun and Moon	1	30	200
+New Year's Facts	In Scotland, "First Footing" says the first person to cross your threshold after midnight should be a man with what?	Dark hair	A bottle of scotch	A piece of coal	A silver coin	1	30	300
+New Year's Facts	Which ancient civilization is credited with the first recorded New Year's celebrations 4,000 years ago?	Egyptians	Babylonians	Mayans	Greeks	2	30	400
+New Year's Facts	What do the citizens of Panama burn on New Year’s Eve to drive away bad luck?	Effigies (Muñecos)	Old Shoes	Dried Palm Leaves	Tree Branches	1	30	500
+New Year's Facts	During the "First Night" celebration in Boston, what is the primary art form displayed?	Ice Sculptures	Sand Castles	Oil Paintings	Glass Blowing	1	30	600

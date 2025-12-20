@@ -1,0 +1,31 @@
+subtype	question	option1	option2	option3	option4	correct	time	square_text
+Anatomy	What is the largest and strongest bone in the human body?	Humerus	Tibia	Femur	Pelvis	3	30	100
+Anatomy	The "Rotator Cuff" is a group of muscles and tendons that stabilize which joint?	Hip	Shoulder	Knee	Ankle	2	30	200
+Anatomy	How many vertebrae are typically found in the cervical spine of a human?	5	7	12	9	2	30	300
+Anatomy	The "Acetabulum" is the socket portion of which major joint?	Shoulder	Elbow	Hip	Wrist	3	30	400
+Anatomy	What is the medical name for the "kneecap"?	Tibia	Patella	Fibula	Scapula	2	30	500
+Anatomy	Which nerve is typically compressed in patients suffering from Carpal Tunnel Syndrome?	Ulnar Nerve	Radial Nerve	Median Nerve	Sciatic Nerve	3	30	600
+Surgery History	Which 19th-century surgeon is known as the "Father of Antiseptic Surgery"?	Joseph Lister	Robert Koch	Louis Pasteur	John Hunter	1	30	100
+Surgery History	The term "Orthopedics" was coined by Nicolas Andry in 1741; what does the Greek root "pais" mean?	Bone	Straight	Child	Joint	3	30	200
+Surgery History	In the early 20th century, Sir John Charnley pioneered the modern version of which procedure?	Spine Fusion	Total Hip Arthroplasty	ACL Reconstruction	IM Nailing	2	30	300
+Surgery History	Before modern drills, surgeons used a "Trepane." Which ancient culture is famous for successful skull trepanation?	Incas	Vikings	Romans	Victorians	1	30	400
+Surgery History	Which metal, discovered to be highly biocompatible, became the gold standard for implants in the 1950s?	Stainless Steel	Gold	Titanium	Silver	3	30	500
+Surgery History	Who discovered X-rays in 1895, forever changing orthopedic diagnostics?	Marie Curie	Wilhelm Röntgen	Thomas Edison	Nikola Tesla	2	30	600
+Clinical Science	The "Lachman Test" is a clinical maneuver used to assess the integrity of which ligament?	MCL	LCL	ACL	PCL	3	30	100
+Clinical Science	"Wolf's Law" states that bone will adapt and grow in response to what?	Nutrients	Mechanical Stress	Oxygen	Vitamin D	2	30	200
+Clinical Science	A "Greenstick" fracture is a type of injury most commonly seen in which patient population?	Elderly	Athletes	Children	Diabetics	3	30	300
+Clinical Science	What is the primary mineral that gives bone its hardness and strength?	Iron	Calcium	Potassium	Zinc	2	30	400
+Clinical Science	In bone healing, what is the name of the temporary bridge of woven bone that forms around the fracture site?	Cortex	Callus	Medulla	Periosteum	2	30	500
+Clinical Science	Which type of bone cell is responsible for bone resorption (breaking down bone)?	Osteoblast	Osteocyte	Osteoclast	Chondrocyte	3	30	600
+Orthopedic Trivia	The "Achilles Tendon" is named after a hero from which mythology?	Roman	Greek	Norse	Egyptian	2	30	100
+Orthopedic Trivia	Which professional sport has the highest recorded incidence of Tommy John surgery (UCL reconstruction)?	Basketball	Soccer	Baseball	Football	3	30	200
+Orthopedic Trivia	What is the common name for "Lateral Epicondylitis"?	Golfer's Elbow	Tennis Elbow	Jumper's Knee	Runner's Toe	2	30	300
+Orthopedic Trivia	How many bones are in the adult human body?	180	206	215	250	2	30	400
+Orthopedic Trivia	Which bone is the only bone in the human body not connected to another bone?	Hyoid	Stapes	Clavicle	Coccxy	1	30	500
+Orthopedic Trivia	The "Osgood-Schlatter" condition affects which specific part of the tibia?	Medial Malleolus	Tibial Tuberosity	Lateral Condyle	Intercondylar eminence	2	30	600
+Trauma & Tools	What is the primary purpose of a "Tourniquet" in orthopedic trauma surgery?	Keep bone straight	Stop blood flow	Measure pressure	Repair nerves	2	30	100
+Trauma & Tools	The "AO Foundation" (Arbeitsgemeinschaft für Osteosynthesefragen) was founded in which country?	USA	Germany	Switzerland	China	3	30	200
+Trauma & Tools	In the classification of fractures, what does an "Open" (compound) fracture mean?	Bone is in two pieces	Bone broke the skin	Bone is crushed	Bone is spiraled	2	30	300
+Trauma & Tools	What material was traditionally used for "Casts" before fiberglass became common?	Plastic	Plaster of Paris	Rubber	Cement	2	30	400
+Trauma & Tools	"External Fixation" involves pins that are placed where?	Inside the bone marrow	Through the skin into bone	Only in the muscle	On top of the skin	2	30	500
+Trauma & Tools	Which imaging modality is best for visualizing soft tissue injuries like a Meniscus tear?	X-Ray	CT Scan	MRI	Ultrasound	3	30	600

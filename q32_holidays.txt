@@ -1,0 +1,31 @@
+subtype	question	option1	option2	option3	option4	correct	time	square_text
+Traditions	In the Chinese Zodiac, which animal represents the year 2025?	Dragon	Snake	Horse	Rabbit	2	30	100
+Traditions	Which famous beverage company is often credited with "designing" the modern red-suited Santa Claus?	Pepsi	Coca-Cola	Budweiser	Starbucks	2	30	200
+Traditions	What is the name of the red envelopes containing money given during Chinese New Year?	Hongbao	Jiaozi	Tangyuan	Chunlian	1	30	300
+Traditions	In the UK and Canada, the day after Christmas is a public holiday known by what name?	St. Stephen's Day	Boxing Day	Family Day	Unity Day	2	30	400
+Traditions	The "Festival of Lanterns" marks the end of which holiday period?	Mid-Autumn Festival	Chinese New Year	Dragon Boat Festival	Qingming	2	30	500
+Traditions	In New York City, what fruit is the nickname for the city where the ball drops on New Year's Eve?	The Big Orange	The Big Peach	The Big Apple	The Big Cherry	3	30	600
+Holiday Media	In the movie "Home Alone," where is the family flying to when they leave Kevin behind?	London	Paris	Tokyo	Rome	2	30	100
+Holiday Media	Which 1988 action movie takes place in "Nakatomi Plaza" during a Christmas party?	Lethal Weapon	Die Hard	Speed	The Fugitive	2	30	200
+Holiday Media	Which popular holiday song was originally written for Thanksgiving, not Christmas?	Jingle Bells	Silent Night	White Christmas	Joy to the World	1	30	300
+Holiday Media	In the movie "Elf," Buddy the Elf travels through "the seven levels of the candy cane forest" to find whom?	His Mother	His Father	Santa	The Grinch	2	30	400
+Holiday Media	"All I Want for Christmas Is You" is a record-breaking holiday hit by which singer?	Celine Dion	Mariah Carey	Whitney Houston	Taylor Swift	2	30	500
+Holiday Media	Which 1993 Tim Burton film features Jack Skellington trying to take over Christmas?	Beetlejuice	The Nightmare Before Christmas	Corpse Bride	Edward Scissorhands	2	30	600
+History & Origin	The statue of a lady holding a torch was a gift from France to the US—what is its name?	Lady Luck	Statue of Liberty	Mother Russia	Victoria	2	30	100
+History & Origin	Which country was the first to use the "Christmas Tree" tradition in the 16th century?	France	Germany	USA	Norway	2	30	200
+History & Origin	Before being called "New Year's Eve," the night of Dec 31st was named after which Saint?	St. Patrick	St. Sylvester	St. Nicholas	St. Valentine	2	30	300
+History & Origin	Which US President was the first to host a Hanukkah party at the White House?	Bill Clinton	George W. Bush	Barack Obama	Donald Trump	2	30	400
+History & Origin	The Gregorian Calendar, which we use today, was introduced by a Pope in which century?	12th Century	14th Century	16th Century	18th Century	3	30	500
+History & Origin	Which holiday was created in 1966 to celebrate African-American heritage and culture?	Juneteenth	Kwanzaa	Heritage Day	Freedom Fest	2	30	600
+Food & Drink	What is the name of the traditional dumplings eaten during Northern Chinese New Year?	Baozi	Jiaozi	Wonton	Shumai	2	30	100
+Food & Drink	Which alcoholic drink is traditionally used for a "New Year's Toast" at midnight?	Vodka	Whiskey	Champagne	Tequila	3	30	200
+Food & Drink	What is the main flavor of the traditional holiday dessert "Candy Canes"?	Cherry	Strawberry	Peppermint	Vanilla	3	30	300
+Food & Drink	In many European countries, what "creature" is made of gingerbread and decorated with icing?	Gingerbread Man	Gingerbread Dog	Gingerbread Cat	Gingerbread Bear	1	30	400
+Food & Drink	What is the name of the sweet "log" shaped cake served in France at Christmas?	Bûche de Noël	Panettone	Stollen	Fruitcake	1	30	500
+Food & Drink	Which bird is the traditional main course for a British Christmas dinner?	Chicken	Duck	Turkey	Pigeon	3	30	600
+World Knowledge	Which city is famous for its massive "Carnival" celebration before Lent?	Tokyo	Rio de Janeiro	New York	London	2	30	100
+World Knowledge	If it is winter in Beijing during Christmas, what season is it in Sydney, Australia?	Spring	Summer	Autumn	Winter	2	30	200
+World Knowledge	How many days are there in a "Leap Year"?	364	365	366	367	33	30	300
+World Knowledge	Which country gives a giant Christmas tree to London every year as a "thank you" for WWII help?	Sweden	Norway	Denmark	Iceland	2	30	400
+World Knowledge	Which culture celebrates "Rosh Hashanah" as their New Year?	Muslim	Jewish	Hindu	Buddhist	2	30	500
+World Knowledge	The "Winter Solstice" (Dongzhi) is the day of the year with the shortest what?	Shortest Day	Shortest Night	Shortest Shadow	Shortest Moon	1	30	600
